@@ -1,0 +1,9 @@
+package com.DAO;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class MappeoAcc implements RowMapper<Accidente>{
+
+    
+    
+}

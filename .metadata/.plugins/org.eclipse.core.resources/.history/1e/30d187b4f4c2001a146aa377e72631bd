@@ -1,0 +1,50 @@
+package com.exemplejar;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.WebApplicationContext;
+
+@Component
+@Scope(value = WebApplicationContext.SCOPE_REQUEST, proxyMode = ScopedProxyMode.TARGET_CLASS)
+public class MejorarFormato {
+
+	private String nombre;
+	private int edad;
+
+	public MejorarFormato() {
+		}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String mejorFormato() {
+
+		String output = "";
+		String[] split = this.nombre.split(" ");
+		for (int i = 0; i < split.length; i++) {
+			output += split[i].substring(0, 1).toUpperCase() + split[i].substring(0, 1).toLowerCase() + " ";
+		}
+
+		return output.trim();
+	}
+	
+	public int edadGato() {
+		
+		return this.edad/7;
+	}
+
+}

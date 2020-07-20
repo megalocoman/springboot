@@ -1,0 +1,35 @@
+package model;
+
+import java.beans.PropertyVetoException;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+@Configuration
+@PropertySource("classpath:db.properties")
+@ComponentScan()
+public class ApplicationContext {
+    @Bean(destroyMethod = "close")
+    DataSource datasource(Environment env) {
+	ComboPooledDataSource ds = new ComboPooledDataSource();
+	try {
+
+	    ds.setDriverClass(env.getRequiredProperty("jdbc.driverClassName"));
+	} catch (PropertyVetoException ex) {
+	    throw new RuntimeException("error while setting the driver class name in the datasource", ex);
+	}
+	ds.setJdbcUrl(env.getRequiredProperty("jdbc.url"));
+	ds.setUser(env.getRequiredProperty("jdbc.username"));
+	ds.setPassword(env.getRequiredProperty("jdbc.password"));
+	ds.setAcquireIncrement(env.getRequiredProperty("c3p0.acquire_increment", Integer.class));
+
+    }
+
+}

@@ -1,0 +1,30 @@
+package com.example.demo;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.DAO.AccidenteDao;
+import com.tabla.Accidente;
+
+@Controller
+public class MapCotroller {
+    
+//    @Autowired
+    private AccidenteDao acc;
+    
+    List<Accidente> listacc;
+    
+    @RequestMapping(value= "/consultacliente")
+    public String irPagina(Model m) {
+	System.out.println("mapping funciona");
+	
+	listacc =acc.consultaaccidente();
+	
+	m.addAttribute("listacc", listacc);
+	return "hello";
+    }
+}

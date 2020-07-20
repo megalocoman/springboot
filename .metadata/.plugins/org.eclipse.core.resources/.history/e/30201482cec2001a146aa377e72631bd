@@ -1,0 +1,9 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		spring.view.prefix: /WEB-INF/jsp/
+		spring.view.suffix: .jsp
+	}
+}
+

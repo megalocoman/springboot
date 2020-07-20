@@ -1,0 +1,34 @@
+package com.example.demo;
+
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.DAO.AccidenteDao;
+import com.tabla.Accidente;
+
+@Controller
+public class MapCotroller {
+    
+    private static final Logger logger =LogManager.getLogger(MapCotroller.class);
+   
+    AccidenteDao acc;
+    
+    List<Accidente> listacc;
+    logger.info("se metio a mapcontroller");
+    
+    @RequestMapping(value= "/consultacliente")
+    public String irPagina(Model m) {
+	logger.info("se metio al request mapping");
+	
+	listacc =acc.consultaaccidente();
+	
+	m.addAttribute("listacc", listacc);
+	return "hello";
+    }
+}

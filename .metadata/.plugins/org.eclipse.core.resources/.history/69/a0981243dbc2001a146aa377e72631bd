@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<h2>ingresar datos</h2>
+<form action="ingresarDatos" method="get" >
+nombre: <input type="text" name="name" />
+edad: <input type="text" name="age" />
+<input type="submit" value="ingresar valores"/>
+</form>
+
+<p>presione <a href="mostrarDatos">aqui</a> para ver nuevo formato </p> 
+</body>
+</html>

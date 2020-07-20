@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #cccccc;
+]
+
+.cabecera {
+	font-family:verdana;
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #99CC99;
+}
+
+.filas {
+	font-family:verdana;
+	text-align: center;
+	background-color: #99CC3
+}
+
+table {
+	font-family:verdana;
+	float: left;
+}
+
+#Boton {
+	font-family:verdana;
+	text-align: left;
+	margin-left: 10px;
+}

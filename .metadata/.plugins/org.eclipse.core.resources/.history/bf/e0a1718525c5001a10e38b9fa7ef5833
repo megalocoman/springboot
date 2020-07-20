@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ContSeguridad {
+	
+	@
+	public String ingresarCliente() {
+		return ;
+	}
+	
+	
+	
+
+}

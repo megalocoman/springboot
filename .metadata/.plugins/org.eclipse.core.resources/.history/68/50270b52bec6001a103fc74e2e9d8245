@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ControlClass {
+    
+    @RequestMapping("/enviarhola")
+    System.out.println("funciono esta lesera");
+    public String irHello() {
+	
+	return "hello";
+    }
+
+}

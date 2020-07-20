@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>pagina principal</h1>
+<h2>ingresar datos</h2>
+<form action="" method="get">
+nombre: <input type="text" name="name" >
+edad: <input type="text" name="age" >
+<input type="submit" name=submit value="ingresar valores">
+</form>
+
+</body>
+</html>

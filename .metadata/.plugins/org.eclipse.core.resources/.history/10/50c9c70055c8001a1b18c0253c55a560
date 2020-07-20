@@ -1,0 +1,14 @@
+package controllermaping;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MapCotroller {
+    
+    @RequestMapping(value="/helloo")
+    public String irPagina() {
+	System.out.println("mapping funciona");
+	return "hello";
+    }
+}

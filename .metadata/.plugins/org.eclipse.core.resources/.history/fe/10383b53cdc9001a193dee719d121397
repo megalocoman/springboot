@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Hola</h1>
+<nav class="nav-main">
+			<img alt="Logo Principal" src="img/logo.png" class="nav-logo">
+			<ul class="nav-menu">
+				<li><a href="ingresocliente.jsp">Clientes</a></li>
+				<li><a href="CreacionOT.jsp">OT</a></li>
+				<li><a href="informe.jsp">Informes de gestión</a></li>
+				<li><a href="Ingresoprofesional.jsp">Profesionales</a></li>
+				<li><a href="ingreso.jsp">Accidentes</a></li>
+			</ul>
+			<ul class="nav-menu-derecha">
+				<li><a href="#"> <i class="fas fa-search"></i>
+				</a></li>
+			</ul>
+		</nav>
+</body>
+</html>

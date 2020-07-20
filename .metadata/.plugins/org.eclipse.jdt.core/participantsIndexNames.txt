@@ -1,0 +1,73 @@
+INDEX VERSION 1.131
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2362343749.index
+\demo\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1373943961.index
+\empresaseguridad\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3464461664.index
+\pruebamodulocuatro\src
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\855843752.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\89006070.index
+\pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4209149474.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4140411783.index
+\ejemploview\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1489614410.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3356428244.index
+\ejercicioJDBCTemplates\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3624594179.index
+\ejemploview\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2544989286.index
+\viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1948274304.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3468769498.index
+\Soy_un_Indefenso_Ejemplo\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3222765887.index
+\ejercicioJDBCTemplates-2\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4248727341.index
+\examplespring\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2527038003.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4114034961.index
+\ejemplesimple\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3513604998.index
+\ninoexample\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2203993171.index
+\example\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3974988608.index
+\modulo5\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3376260508.index
+\pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\356844904.index
+\empresaseguridad\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\340930095.index
+\pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\418268036.index
+\excersice\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2968502548.index
+\viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1827604891.index
+\nino\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\719629602.index
+\pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4088819664.index
+\viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1663002679.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3395102058.index
+\viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\253516323.index
+\PruebaSpring\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3665412365.index
+\viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\90412098.index
+\examplespring2\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2460704725.index
+\examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2856724814.index
+\exampleformato\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2069271701.index
+\pruebauno\src\main\java
