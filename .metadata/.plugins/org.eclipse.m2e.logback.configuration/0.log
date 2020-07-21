@@ -11395,3 +11395,64 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2020-07-20 21:48:07,868 [Worker-334: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2020-07-20 21:48:07,903 [Worker-334: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-07-20 21:48:07,903 [Worker-334: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 09:22:41,409 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-21 11:36:07,587 [Worker-54: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 11:36:12,887 [Worker-54: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:thymeview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\thymeview\pom.xml.
+2020-07-21 11:36:21,432 [Worker-54: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /thymeview/src/main/java
+2020-07-21 11:36:21,435 [Worker-54: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /thymeview/src/main/resources
+2020-07-21 11:36:21,437 [Worker-54: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /thymeview/src/main/resources
+2020-07-21 11:36:21,440 [Worker-54: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /thymeview/src/test/java
+2020-07-21 11:36:31,409 [Worker-54: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for thymeview
+2020-07-21 11:36:31,432 [Worker-54: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 23 sec
+2020-07-21 11:36:49,654 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:36:49,690 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 11:36:49,738 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-07-21 11:36:49,851 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:36:49,853 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 11:36:49,856 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of thymeview
+2020-07-21 11:36:49,857 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for thymeview
+2020-07-21 11:36:49,879 [Worker-56: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:41:36,446 [Worker-66: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:41:36,462 [Worker-66: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-21 11:41:36,465 [Worker-66: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-07-21 11:41:36,494 [Worker-66: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:41:36,494 [Worker-66: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 11:46:09,798 [Worker-66: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 11:46:12,682 [Worker-66: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:thymeview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\thymeview\pom.xml.
+2020-07-21 11:46:16,987 [Worker-66: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /thymeview/src/main/java
+2020-07-21 11:46:16,989 [Worker-66: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /thymeview/src/main/resources
+2020-07-21 11:46:16,990 [Worker-66: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /thymeview/src/main/resources
+2020-07-21 11:46:16,993 [Worker-66: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /thymeview/src/test/java
+2020-07-21 11:46:19,880 [Worker-66: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for thymeview
+2020-07-21 11:46:19,915 [Worker-66: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2020-07-21 11:46:42,572 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:46:42,575 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 11:46:42,622 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-07-21 11:46:42,692 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:46:42,693 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 11:46:42,694 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of thymeview
+2020-07-21 11:46:42,695 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for thymeview
+2020-07-21 11:46:42,708 [Worker-76: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:53:35,039 [Worker-83: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:53:35,045 [Worker-83: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-21 11:53:35,046 [Worker-83: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 11:53:35,066 [Worker-83: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 11:53:35,067 [Worker-83: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 12:07:12,530 [Worker-91: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:07:12,560 [Worker-91: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 12:07:12,571 [Worker-91: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-07-21 12:07:12,584 [Worker-91: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:07:12,585 [Worker-91: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 12:11:31,638 [Worker-97: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:11:31,648 [Worker-97: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 12:11:31,662 [Worker-97: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-07-21 12:11:31,675 [Worker-97: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:11:31,677 [Worker-97: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 12:18:23,069 [Worker-101: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:18:23,075 [Worker-101: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 12:18:23,082 [Worker-101: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-07-21 12:18:23,094 [Worker-101: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:18:23,095 [Worker-101: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\thymeview\src\test\resources
+2020-07-21 12:26:40,980 [Worker-105: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 12:26:40,998 [Worker-105: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 12:26:41,006 [Worker-105: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources

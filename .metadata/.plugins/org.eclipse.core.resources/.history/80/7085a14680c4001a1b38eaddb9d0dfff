@@ -1,2 +1,0 @@
-spring.thymeleaf.prefix= /main/resources/templates/
-spring.thymeleaf.suffix= .jsp

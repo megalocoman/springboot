@@ -25,7 +25,8 @@
 				<td th:text="${cli.telefono}">
 				<td th:text="${cli.correo}">
 				<td th:text="${cli.contacto}">
-				
+				<td><a th:href="@{/actualizarcliente/{rutcliente}(rutcliente=${cli.rutcliente})}">Actualizar</a></td>
+
 			</tr>
 
 		</tbody>
