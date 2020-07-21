@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Ingreso informacion cliente</h1>
+
+<form action="#" th:action="@{/ingcliente}" th:object="${cliente}" method="get">
+	Rut cliente: <input type="text" th:field="*{rutcliente}" name="rut_cliente"/><br>
+		Nombre cliente: <input type="text" th:field="*{nombrecliente}" name="nom_cliente"/><br> 
+		Direccion: <input type="text"	th:field="*{direccion}" name="direccion_cliente"/><br>
+		Telefono: <input type="text" th:field="*{telefono}" name="fono_cliente"/><br>
+		Correo: <input type="text" th:field="*{correo}" name="correo_cliente"/><br>
+		contacto: <input type="text" th:field="*{contacto}" name="contacto_cliente"/><br>
+		 <input type="submit" value="ingresar"> <input type="reset" value="reset"/>
+</form>
+</body>
+</html>

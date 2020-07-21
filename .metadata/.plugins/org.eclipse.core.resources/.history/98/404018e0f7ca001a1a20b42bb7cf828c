@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Rut cliente</th>
+				<th>Nombre</th>
+				<th>Direccion</th>
+				<th>Telefono</th>
+				<th>Correo</th>
+				<th>Contacto</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="cli: ${listcli}">
+				<td th:text="${cli.rutcliente}">
+				<td th:text="${cli.nombrecliente}">
+				<td th:text="${cli.direccion}">
+				<td th:text="${cli.telefono}">
+				<td th:text="${cli.correo}">
+				<td th:text="${cli.contacto}">
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+</html>

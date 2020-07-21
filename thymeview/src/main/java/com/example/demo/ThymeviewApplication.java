@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ThymeviewApplication {
 
     public static void main(String[] args) {
-	System.getProperties().put("server.port", 8182);
+	System.getProperties().put("server.port", 8183);
 	SpringApplication.run(ThymeviewApplication.class, args);
     }
 
