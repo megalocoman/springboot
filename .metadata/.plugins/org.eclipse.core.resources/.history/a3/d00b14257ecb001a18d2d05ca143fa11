@@ -26,7 +26,6 @@
 				<td th:text="${cli.correo}">
 				<td th:text="${cli.contacto}">
 				<td><a th:href="@{/actualizarcliente/{rutcliente}(rutcliente=${cli.rutcliente})}">Actualizar</a></td>
-				<td><a th:href="@{/eliminarcliente/{rutcliente}(rutcliente=${cli.rutcliente})}">eliminar</a></td>
 
 			</tr>
 

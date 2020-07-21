@@ -18,8 +18,6 @@
 		Correo: <input type="text" th:field="*{correo}" name="correo_cliente"/><br>
 		contacto: <input type="text" th:field="*{contacto}" name="contacto_cliente"/><br>
 		 <input type="submit" value="ingresar"> <input type="reset" value="reset"/>
-</form><br>
-<a href="/consultacliente">ir a consulta de clientes</a>
-
+</form>
 </body>
 </html>

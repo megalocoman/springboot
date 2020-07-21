@@ -22,12 +22,10 @@ public class ClienteDao {
 	this.plantilla = plantilla;
     }
 
-    // retorna una lista de objetos de tabla de clientes 
     public List<Cliente> consultarcliente() {
 	return plantilla.query("SELECT * FROM cliente", new ClienteMapper());
     }
 
-    // ingresa una objeto cliente a la base de datos cliente
     public void ingresar(Cliente cliente) {
 	SimpleJdbcInsert insertcliente = new SimpleJdbcInsert(plantilla);
 	insertcliente.withTableName("cliente").usingColumns("nombrecliente", 
@@ -36,7 +34,6 @@ public class ClienteDao {
 	insertcliente.execute(param);
     }
 
-    // retorna un objeto de cliente ingresando rut de cliente
     public Cliente consultaclienteID(String rutcliente) {
 	String sql = "SELECT * FROM cliente WHERE rutcliente = ?";
 	Object[] args = { rutcliente };
@@ -44,7 +41,6 @@ public class ClienteDao {
 	return cliente;
     }
 
-    // actualiza tabla clientes ingresando un onjeto cliente
     public void actualizarClienteID(Cliente cliente) {
 	String sql = "UPDATE cliente SET nombrecliente=:nombrecliente, telefono=:telefono, contacto=:contacto, correo=:correo, direccion=:direccion WHERE rutcliente=:rutcliente  ";
 	BeanPropertySqlParameterSource param = new BeanPropertySqlParameterSource(cliente);
@@ -52,7 +48,6 @@ public class ClienteDao {
 	template.update(sql, param);
     }
     
-    // elimina registros de tabla cliente indicando rut respectivo
     public void eliminarPorID(String rutcliente) {
 	String sql = "DELETE FROM cliente WHERE rutcliente = ?";
 	plantilla.update(sql, rutcliente);

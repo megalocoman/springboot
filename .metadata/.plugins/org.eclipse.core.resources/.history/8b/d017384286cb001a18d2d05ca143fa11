@@ -5,7 +5,6 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-// mapea objeto cliente para ingresar consultas
 public class ClienteMapper implements RowMapper<Cliente> {
     public Cliente mapRow(ResultSet rs, int rowNum) throws SQLException{
 	return new Cliente(rs.getString("rutcliente"), 

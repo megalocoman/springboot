@@ -33,7 +33,7 @@ public class MapCont {
 	
 	clidao.ingresar(cliente);
 	 
-	return "redirect:/consultacliente";
+	return "redirect: /consultacliente";
     }
     
     // extrae consulta de tabla y pasa a una lista de objetos, enviandola a resultadocliente.html
@@ -53,18 +53,16 @@ public class MapCont {
 	return "actualizarcliente";
     }
     
-    //actualiza fila segun lo ingresado en la pagina de actulizacion, redireciona a consultacliente.html
     @GetMapping(value="/actcliente")
     public String actualizaCliente(@ModelAttribute("cliente") Cliente cliente) {
 	clidao.actualizarClienteID(cliente);
-	return "redirect:/consultacliente";
+	return "redirect: /consultacliente";
     }
     
-    // elimina fila segun rut, redirecciona a consultacliente.html
     @RequestMapping(value="/eliminarcliente/{rutcliente}")
     public String eliminarCiente(@PathVariable(name="rutcliente") String rutcliente) {
 	clidao.eliminarPorID(rutcliente);
-	return "redirect:/consultacliente";
+	return "redirect: /consultacliente";
     }
     
     
