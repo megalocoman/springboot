@@ -11505,3 +11505,80 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2020-07-21 14:39:32,424 [Worker-152: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of thymeview
 2020-07-21 14:39:32,424 [Worker-152: Launching thymeview - ThymeviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for thymeview
 2020-07-21 14:39:32,434 [Worker-152: Launching thymeview - ThymeviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 19:51:45,812 [Worker-191: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 19:51:49,582 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 19:51:49,585 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:51:49,631 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:51:49,665 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 19:51:59,100 [Worker-191: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 16 sec
+2020-07-21 19:51:59,142 [Worker-191: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 19:52:01,439 [Worker-191: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 19:52:06,403 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 19:52:06,405 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:52:06,406 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:52:06,409 [Worker-191: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 19:52:08,028 [Worker-191: Import Getting Started Content] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspjpaview
+2020-07-21 19:52:08,046 [Worker-191: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2020-07-21 19:56:46,810 [Worker-201: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 19:56:50,291 [Worker-201: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 19:56:57,163 [Worker-201: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 19:56:57,166 [Worker-201: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:56:57,171 [Worker-201: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 19:56:57,181 [Worker-201: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 19:56:59,558 [Worker-201: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspjpaview
+2020-07-21 19:56:59,593 [Worker-201: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2020-07-21 20:10:47,035 [Worker-207: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 20:10:49,687 [Worker-207: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 20:10:54,045 [Worker-207: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 20:10:54,047 [Worker-207: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:10:54,049 [Worker-207: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:10:54,051 [Worker-207: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 20:10:56,146 [Worker-207: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspjpaview
+2020-07-21 20:10:56,158 [Worker-207: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2020-07-21 20:12:08,663 [Worker-208: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 20:12:10,780 [Worker-208: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 20:12:15,186 [Worker-208: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 20:12:15,187 [Worker-208: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:12:15,189 [Worker-208: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:12:15,191 [Worker-208: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 20:12:17,277 [Worker-208: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspjpaview
+2020-07-21 20:12:17,292 [Worker-208: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2020-07-21 20:12:45,040 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:12:45,043 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:12:45,084 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:12:45,113 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:12:45,114 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-07-21 20:12:45,115 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspjpaview
+2020-07-21 20:12:45,116 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspjpaview
+2020-07-21 20:12:45,142 [Worker-208: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:14:15,285 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:14:15,295 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:14:15,313 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:14:15,319 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:14:15,320 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-07-21 20:14:56,719 [Worker-210: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:14:56,721 [Worker-210: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-21 20:14:56,722 [Worker-210: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:14:56,740 [Worker-210: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:14:56,741 [Worker-210: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-07-21 20:16:12,512 [Worker-212: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-21 20:16:14,897 [Worker-212: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jspjpaview:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\jspjpaview\pom.xml.
+2020-07-21 20:16:18,618 [Worker-212: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/main/java
+2020-07-21 20:16:18,622 [Worker-212: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:16:18,623 [Worker-212: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jspjpaview/src/main/resources
+2020-07-21 20:16:18,627 [Worker-212: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspjpaview/src/test/java
+2020-07-21 20:16:24,849 [Worker-212: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspjpaview
+2020-07-21 20:16:25,032 [Worker-212: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2020-07-21 20:17:15,482 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:17:15,484 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:17:15,532 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:17:15,569 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:17:15,571 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-07-21 20:17:15,571 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspjpaview
+2020-07-21 20:17:15,573 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspjpaview
+2020-07-21 20:17:15,585 [Worker-207: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:18:40,805 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:18:40,811 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-21 20:18:40,816 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-21 20:18:40,821 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-21 20:18:40,822 [Worker-217: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources

@@ -2,6 +2,8 @@ package com.example.demo;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,8 @@ public class MapCont {
     
     List<Cliente> listcli;
     
+    private static final Logger logger = LogManager.getLogger(ClienteDao.class);
+    
     @Autowired
     private ClienteDao clidao;
     
@@ -24,6 +28,7 @@ public class MapCont {
     public String linkIngresoClientes(Model m) {
 	System.out.println("se metio al ingreso link");
 	m.addAttribute("cliente", new Cliente());
+	logger.info("Se ingresa a pagina ingreso cliente.");
 	return "ingresoclientes";
     }
     
