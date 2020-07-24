@@ -1,8 +1,5 @@
 package com.example.demo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,50 +15,59 @@ public class ViewController {
     @Autowired
     ProfesionalJPADAO profDao;
 
-    @GetMapping(value = "/ingprofesional")
-    public String ingresarProfesional(@ModelAttribute("command") ProfesionalJPA pro) {
-
-	profDao.save(pro);
-	System.out.println("entro al ingreso de profesionales");
-
-	return "redirect:/consultaprofesional";
-
-    }
-
+    // Asigna un nuevo objeto ProfesionalJPA a "command" y envias este a ingreso
+    // profesional.jsp
+    //
     @RequestMapping(value = "/paginaingresoprofesional")
     public ModelAndView vistaIngresoProfesional() {
 
 	return new ModelAndView("ingresoprofesional", "command", new ProfesionalJPA());
     }
 
+    // recibe objeto ProfesionalJPA y lo ingresa en la base de datos
+    @GetMapping(value = "/ingprofesional")
+    public String ingresarProfesional(@ModelAttribute("command") ProfesionalJPA pro) {
+
+	profDao.save(pro);
+	return "redirect:/consultaprofesional";
+    }
+
+    // realiza consulta SELECT * FROM profesional y lo guarda en un iterable, para
+    // ser mostrado en consultaprofesional.jsp
     @RequestMapping(value = "/consultaprofesional")
     public String consultarProfesional(Model m) {
 //	
-	 Iterable<ProfesionalJPA> listprof =  profDao.findAll();
-	 m.addAttribute("listprof", listprof);
+	Iterable<ProfesionalJPA> listprof = profDao.findAll();
+	m.addAttribute("listprof", listprof);
 	return "consultaprofesional";
     }
-    
-    @RequestMapping(value="/eliminarprofesional/{rutprofesional}")
+
+    // elimina registros en base de datos sugun rut indicado, y redireciona a
+    // consultaprofesional.jsp
+    @RequestMapping(value = "/eliminarprofesional/{rutprofesional}")
     public String eliminarProfesionalbyRut(@PathVariable String rutprofesional) {
-	
-	profDao.deleteById(rutprofesional);	
-	
+
+	profDao.deleteById(rutprofesional);
+
 	return "redirect:/consultaprofesional";
     }
-    
-    @RequestMapping(value="/actualizarprofesional/{rutprofesional}")
+
+    // busca registro segun rut entregad y redirecciona a vista
+    // consultaprofesional.jsp
+    @RequestMapping(value = "/actualizarprofesional/{rutprofesional}")
     public String iractualizarProfesional(@PathVariable String rutprofesional, Model m) {
-	
+
 	m.addAttribute("command", profDao.findById(rutprofesional));
-		
-	return "actualizarprofesional";
+
+	return "redirect:/consultaprofesional";
     }
-    
-    @GetMapping(value="/actprofesional")
+
+    // actualiza registro segun rut indicado, redirecciona a a vista
+    // consultaprofesional.jsp
+    @GetMapping(value = "/actprofesional")
     public String actualizarprofesional(@ModelAttribute("command") ProfesionalJPA pro) {
 	profDao.save(pro);
 	return "redirect:/consultaprofesional";
     }
-    
+
 }
