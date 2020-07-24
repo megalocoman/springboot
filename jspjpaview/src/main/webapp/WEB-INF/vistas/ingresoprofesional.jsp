@@ -13,11 +13,11 @@
 <body>
 <h1>Ingrese su cliente</h1>
 <form:form method="get"  action="/ingprofesional">
-	Rut cliente: <form:input path="rutprofesional"/><br>
-	nombre: <form:input path="nombre"/><br>
-	correo: <form:input path="correo"/><br>
-	telefono: <form:input path="telefono"/><br>
-	<input type="submit" value="ingresar cliente">
+	Rut profesional: <form:input path="rutprofesional"/><br>
+	Nombre: <form:input path="nombre"/><br>
+	Correo: <form:input path="correo"/><br>
+	Telefono: <form:input path="telefono"/><br>
+	<input type="submit" value="ingresar profesional">
 </form:form>
 
 <a href="/consultaprofesional">consultar profesionales</a>

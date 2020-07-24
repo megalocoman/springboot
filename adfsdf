@@ -1,0 +1,47 @@
+[33mcommit 845c1858c57bb123f49bc4e7ae87b4b77034fcae[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Thu Jul 23 21:21:35 2020 -0400
+
+    comentarios en clase de controladores viewcontroller.java
+
+[33mcommit 3dbd0c7235dd1644b1af666074e88848a0621beb[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Thu Jul 23 18:57:45 2020 -0400
+
+    CRUD completo con jpa y vistas en jsp
+
+[33mcommit eeabb66343e1b3303b2eb5e1083ac131ec45c966[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Thu Jul 23 11:20:55 2020 -0400
+
+    prueba con jsp de mierda funciona
+
+[33mcommit f4cccc8b48742fa98cdaa83a8896fd64d7ff35ce[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Tue Jul 21 20:23:02 2020 -0400
+
+    jspjpaview incluido y vistas funcionando
+
+[33mcommit 01dcc0314a782e642da5273b42d901d315507fdc[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Tue Jul 21 15:19:36 2020 -0400
+
+    ingresa eliminar filas y comentarios clases java
+
+[33mcommit 27c14dfe88ea8b54947b7f0bb252d5ea2ddac5da[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Tue Jul 21 12:30:23 2020 -0400
+
+    se invluyo ingreso y actualizacion clientes, en dao controoler y vistas
+
+[33mcommit d399c43fdb11754329343d203804d0dc3a900af2[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Mon Jul 20 22:59:44 2020 -0400
+
+    segundo comit com mas chanfle
+
+[33mcommit ae0e404221e2ab6b012cdba14c87c49212f1932e[m
+Author: megalocoman <megalocoman@gmail.com>
+Date:   Mon Jul 20 11:30:40 2020 -0400
+
+    primer commit workbench spring tools, todas las carpetas

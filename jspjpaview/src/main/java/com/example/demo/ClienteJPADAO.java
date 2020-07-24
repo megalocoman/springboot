@@ -4,10 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProfesionalJPADAO extends CrudRepository<ProfesionalJPA, String>{
-    
+public interface ClienteJPADAO extends CrudRepository<ClienteJPA, String>{
 
 }
-
-
-    
