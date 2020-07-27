@@ -15,6 +15,8 @@ public class Seguridad {
     
     public Seguridad() {
     }
+    
+    
 
 
     public String getRut() {

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Home Page</title>
+<title>Logout Page</title>
 </head>
 <body>
-
-<h1>Welcome to the main page</h1>
+<h1>Logout Page</h1>
+<a href="/login">Main Page</a>
 </body>
 </html>

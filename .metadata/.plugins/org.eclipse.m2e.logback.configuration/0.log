@@ -12912,3 +12912,124 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2020-07-26 16:47:53,079 [Worker-60: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
 2020-07-26 16:54:59,410 [Worker-113: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-07-26 16:54:59,420 [Worker-113: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 16:54:59,433 [Worker-113: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 16:54:59,440 [Worker-113: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 16:54:59,440 [Worker-113: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 20:39:22,664 [Worker-141: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-26 20:39:24,668 [Worker-141: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\pom.xml.
+2020-07-26 20:39:34,497 [Worker-141: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/main/java
+2020-07-26 20:39:34,498 [Worker-141: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-26 20:39:34,501 [Worker-141: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-26 20:39:34,503 [Worker-141: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/test/java
+2020-07-26 20:39:38,135 [Worker-141: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecuritySpring
+2020-07-26 20:39:38,169 [Worker-141: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 15 sec
+2020-07-26 20:39:55,023 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 20:39:55,028 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 20:39:55,072 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 20:39:55,080 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 20:39:55,081 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 20:39:55,082 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecuritySpring
+2020-07-26 20:39:55,083 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecuritySpring
+2020-07-26 20:39:55,092 [Worker-149: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 20:41:54,885 [Worker-148: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-26 20:41:56,088 [Worker-148: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\pom.xml.
+2020-07-26 20:42:01,698 [Worker-148: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/main/java
+2020-07-26 20:42:01,699 [Worker-148: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-26 20:42:01,700 [Worker-148: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-26 20:42:01,702 [Worker-148: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/test/java
+2020-07-26 20:42:04,646 [Worker-148: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecuritySpring
+2020-07-26 20:42:04,673 [Worker-148: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2020-07-26 20:42:17,222 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 20:42:17,224 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 20:42:17,267 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 20:42:17,312 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 20:42:17,313 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 20:42:17,314 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecuritySpring
+2020-07-26 20:42:17,315 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecuritySpring
+2020-07-26 20:42:17,323 [Worker-150: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:00:39,683 [Worker-163: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:00:39,781 [Worker-163: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 21:00:39,801 [Worker-163: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 21:00:39,809 [Worker-163: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:00:39,809 [Worker-163: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 21:08:17,797 [Worker-151: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:08:17,808 [Worker-151: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:08:17,810 [Worker-151: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:08:17,821 [Worker-151: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:08:17,821 [Worker-151: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 21:19:35,306 [Worker-175: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:19:35,313 [Worker-175: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:19:35,314 [Worker-175: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:19:35,319 [Worker-175: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:19:35,320 [Worker-175: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 21:52:26,659 [Worker-184: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:52:26,664 [Worker-184: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:52:26,665 [Worker-184: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-26 21:52:26,692 [Worker-184: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:52:26,693 [Worker-184: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 21:59:00,047 [Worker-188: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:59:00,060 [Worker-188: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 21:59:00,071 [Worker-188: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 21:59:00,078 [Worker-188: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 21:59:00,079 [Worker-188: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 22:08:52,665 [Worker-194: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 22:08:52,681 [Worker-194: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 22:08:52,698 [Worker-194: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 22:08:52,852 [Worker-194: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 22:08:52,854 [Worker-194: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-26 22:24:28,992 [Worker-193: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 22:24:29,008 [Worker-193: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 22:24:29,020 [Worker-193: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-26 22:24:29,028 [Worker-193: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-26 22:24:29,029 [Worker-193: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:03:40,913 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-27 09:15:18,201 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-27 09:15:22,927 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\pom.xml.
+2020-07-27 09:15:29,149 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/main/java
+2020-07-27 09:15:29,149 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-27 09:15:29,149 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-27 09:15:29,157 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/test/java
+2020-07-27 09:15:34,743 [Worker-12: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecuritySpring
+2020-07-27 09:15:34,794 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 16 sec
+2020-07-27 09:16:02,709 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:16:02,719 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:16:02,768 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:16:02,800 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:16:02,800 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:16:02,800 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecuritySpring
+2020-07-27 09:16:02,808 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecuritySpring
+2020-07-27 09:16:02,821 [Worker-2: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:18:08,248 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-27 09:18:10,736 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\pom.xml.
+2020-07-27 09:18:15,752 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/main/java
+2020-07-27 09:18:15,752 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-27 09:18:15,752 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SecuritySpring/src/main/resources
+2020-07-27 09:18:15,768 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SecuritySpring/src/test/java
+2020-07-27 09:18:19,765 [Worker-18: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SecuritySpring
+2020-07-27 09:18:19,785 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2020-07-27 09:18:41,934 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:18:41,944 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:18:41,985 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:18:42,005 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:18:42,005 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:18:42,005 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SecuritySpring
+2020-07-27 09:18:42,005 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SecuritySpring
+2020-07-27 09:18:42,026 [Worker-7: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:20:48,961 [Worker-17: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:20:48,961 [Worker-17: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-27 09:20:48,961 [Worker-17: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-27 09:20:48,977 [Worker-17: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:20:48,977 [Worker-17: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:37:08,910 [Worker-24: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:37:08,926 [Worker-24: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:37:08,942 [Worker-24: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:37:08,948 [Worker-24: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:37:08,948 [Worker-24: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:40:18,888 [Worker-25: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:40:18,899 [Worker-25: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:40:18,908 [Worker-25: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-27 09:40:18,913 [Worker-25: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:40:18,920 [Worker-25: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\SecuritySpring\src\test\resources
+2020-07-27 09:43:31,563 [Worker-26: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-27 09:43:31,579 [Worker-26: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-27 09:43:31,579 [Worker-26: Launching SecuritySpring - SecuritySpringApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
