@@ -37,6 +37,8 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserDetailsService userDetailsService;
 
+    
+    // conecta  a base de datos
     @Bean
     public AuthenticationProvider authProvider() {
 
@@ -47,6 +49,8 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 	return provider;
     }
 
+    
+    // metodo para configurar login y logout
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
