@@ -41,4 +41,10 @@ public class AuthController {
 	
 	return "administrador";
     }
+    
+    @RequestMapping(value="/logout-success")
+    public String logoutPage() {
+	
+	return "logout";
+    }
 }

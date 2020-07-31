@@ -23,5 +23,6 @@ Usted ve este mensaje por que es del area de administracion
 
 </sec:authorize>
 
+<a href="/logout"> presione para teminar sesion</a>
 </body>
 </html>
