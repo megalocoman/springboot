@@ -15,6 +15,8 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4088819664.index
 \viewmvc1\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2238533462.index
+\authorization\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2856724814.index
 \exampleformato\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1343573691.index
@@ -61,6 +63,8 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \ninoexample\src\main\resources
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2069271701.index
 \pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\184518031.index
+\authoJPA\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\855843752.index
 \examplejar\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2499915750.index

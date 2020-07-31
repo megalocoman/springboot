@@ -13099,3 +13099,188 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2020-07-29 16:16:07,099 [Worker-114: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/test/java
 2020-07-29 16:16:09,044 [Worker-114: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authorization
 2020-07-29 16:16:09,058 [Worker-114: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2020-07-29 19:24:00,400 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-29 19:24:04,846 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring-1:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authorization\pom.xml.
+2020-07-29 19:24:10,795 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE.pom
+2020-07-29 19:24:11,193 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE.pom
+2020-07-29 19:24:11,433 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE.pom
+2020-07-29 19:24:11,628 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE.pom
+2020-07-29 19:24:12,580 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE.jar
+2020-07-29 19:24:12,774 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE.jar
+2020-07-29 19:24:13,118 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE.jar
+2020-07-29 19:24:13,306 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE.jar
+2020-07-29 19:24:20,297 [Worker-165: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/main/java
+2020-07-29 19:24:20,299 [Worker-165: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:24:20,305 [Worker-165: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:24:20,308 [Worker-165: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/test/java
+2020-07-29 19:24:21,202 [Worker-169: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE-sources.jar
+2020-07-29 19:24:21,514 [Worker-169: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-taglibs/5.3.3.RELEASE/spring-security-taglibs-5.3.3.RELEASE-sources.jar
+2020-07-29 19:24:21,684 [Worker-169: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-taglibs:5.3.3.RELEASE
+2020-07-29 19:24:22,404 [Worker-169: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE-sources.jar
+2020-07-29 19:24:23,054 [Worker-169: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-acl/5.3.3.RELEASE/spring-security-acl-5.3.3.RELEASE-sources.jar
+2020-07-29 19:24:23,509 [Worker-169: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-acl:5.3.3.RELEASE
+2020-07-29 19:24:23,549 [Worker-169: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-taglibs:5.3.3.RELEASE
+2020-07-29 19:24:23,569 [Worker-169: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-acl:5.3.3.RELEASE
+2020-07-29 19:24:24,295 [Worker-165: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authorization
+2020-07-29 19:24:24,309 [Worker-165: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 23 sec
+2020-07-29 19:25:20,900 [Worker-168: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-29 19:25:22,791 [Worker-168: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring-1:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authorization\pom.xml.
+2020-07-29 19:25:27,469 [Worker-168: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/main/java
+2020-07-29 19:25:27,470 [Worker-168: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:25:27,471 [Worker-168: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:25:27,473 [Worker-168: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/test/java
+2020-07-29 19:25:28,998 [Worker-168: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authorization
+2020-07-29 19:25:29,012 [Worker-168: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2020-07-29 19:25:46,921 [Worker-173: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-29 19:25:48,680 [Worker-173: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring-1:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authorization\pom.xml.
+2020-07-29 19:25:53,474 [Worker-173: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/main/java
+2020-07-29 19:25:53,475 [Worker-173: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:25:53,477 [Worker-173: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 19:25:53,479 [Worker-173: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/test/java
+2020-07-29 19:25:55,599 [Worker-173: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authorization
+2020-07-29 19:25:55,614 [Worker-173: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2020-07-29 21:26:20,269 [Worker-200: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-29 21:26:23,104 [Worker-200: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:SecuritySpring-1:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authorization\pom.xml.
+2020-07-29 21:26:30,394 [Worker-200: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/main/java
+2020-07-29 21:26:30,396 [Worker-200: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 21:26:30,398 [Worker-200: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authorization/src/main/resources
+2020-07-29 21:26:30,401 [Worker-200: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authorization/src/test/java
+2020-07-29 21:26:32,605 [Worker-200: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authorization
+2020-07-29 21:26:32,620 [Worker-200: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2020-07-29 21:27:03,114 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:27:03,146 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:27:03,195 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:27:03,331 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:27:03,332 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authorization\src\test\resources
+2020-07-29 21:27:03,334 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authorization
+2020-07-29 21:27:03,346 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authorization
+2020-07-29 21:27:03,365 [Worker-204: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:28:56,499 [Worker-203: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:28:56,512 [Worker-203: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:28:56,523 [Worker-203: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:28:56,529 [Worker-203: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:28:56,530 [Worker-203: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authorization\src\test\resources
+2020-07-29 21:36:57,991 [Worker-192: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:36:58,002 [Worker-192: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:36:58,013 [Worker-192: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-29 21:36:58,026 [Worker-192: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 21:36:58,028 [Worker-192: Launching authorization - SecuritySpring1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authorization\src\test\resources
+2020-07-30 09:02:54,631 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-30 16:00:40,673 [Worker-18: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 16:00:48,763 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 16:00:48,784 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 16:00:48,818 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 16:00:48,857 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 16:00:58,939 [Worker-18: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 28 sec
+2020-07-30 16:00:58,956 [Worker-18: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 16:01:03,973 [Worker-18: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 16:01:09,280 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 16:01:09,380 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 16:01:09,385 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 16:01:09,389 [Worker-18: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 16:01:15,314 [Worker-18: Import Getting Started Content] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 16:01:15,361 [Worker-18: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 16 sec
+2020-07-30 16:02:01,993 [Worker-16: reload maven project] ERROR o.e.m2e.editor.pom.MavenPomEditor - failed to load maven project for org.eclipse.ui.part.FileEditorInput(/authoJPA/pom.xml)
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1064)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1063)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:244)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:634)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:938)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2020-07-30 17:50:52,262 [Worker-55: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 17:50:56,255 [Worker-55: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 17:51:04,185 [Worker-55: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 17:51:04,187 [Worker-55: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 17:51:04,188 [Worker-55: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 17:51:04,190 [Worker-55: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 17:51:06,709 [Worker-55: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 17:51:06,724 [Worker-55: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 14 sec
+2020-07-30 17:51:23,841 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 17:51:23,859 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 17:51:23,908 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 17:51:23,928 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 17:51:23,929 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 17:51:23,930 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-30 17:51:23,937 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-30 17:51:23,956 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 17:53:28,423 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 17:53:28,428 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 17:53:28,430 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 17:53:28,434 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 17:53:28,435 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:04:05,511 [Worker-103: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 20:04:10,864 [Worker-103: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 20:04:26,908 [Worker-103: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 20:04:26,910 [Worker-103: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 20:04:26,911 [Worker-103: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 20:04:26,915 [Worker-103: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 20:04:34,076 [Worker-103: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 20:04:34,176 [Worker-103: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 28 sec
+2020-07-30 20:11:52,906 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:11:52,920 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:11:52,979 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 20:11:52,988 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:11:52,989 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:11:52,992 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-30 20:11:52,993 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-30 20:11:53,007 [Worker-115: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:13:33,540 [Worker-118: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:13:33,553 [Worker-118: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:13:33,562 [Worker-118: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 20:13:33,572 [Worker-118: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:13:33,574 [Worker-118: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:21:57,046 [Worker-126: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:21:57,059 [Worker-126: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:21:57,069 [Worker-126: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 20:21:57,080 [Worker-126: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:21:57,081 [Worker-126: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:43:27,378 [Worker-134: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 20:43:30,502 [Worker-134: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 20:43:36,565 [Worker-134: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 20:43:36,566 [Worker-134: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 20:43:36,568 [Worker-134: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 20:43:36,571 [Worker-134: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 20:43:39,858 [Worker-134: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 20:43:39,885 [Worker-134: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2020-07-30 20:43:53,228 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:43:53,231 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:43:53,276 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:43:53,317 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:43:53,318 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:43:53,319 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-30 20:43:53,320 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-30 20:43:53,333 [Worker-139: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:50:55,132 [Worker-147: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:50:55,146 [Worker-147: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:50:55,153 [Worker-147: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:50:55,160 [Worker-147: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:50:55,160 [Worker-147: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 20:52:54,437 [Worker-149: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:52:54,445 [Worker-149: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:52:54,469 [Worker-149: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 20:52:54,478 [Worker-149: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 20:52:54,480 [Worker-149: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 21:16:05,282 [Worker-154: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 21:16:08,661 [Worker-154: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 21:16:14,079 [Worker-154: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 21:16:14,080 [Worker-154: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 21:16:14,082 [Worker-154: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 21:16:14,085 [Worker-154: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 21:16:16,874 [Worker-154: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 21:16:16,905 [Worker-154: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2020-07-30 21:19:45,197 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 21:19:45,200 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 21:19:45,241 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 21:19:45,266 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 21:19:45,267 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 21:19:45,268 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
