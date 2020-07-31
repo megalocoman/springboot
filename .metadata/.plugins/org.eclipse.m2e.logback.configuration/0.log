@@ -13284,3 +13284,101 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2020-07-30 21:19:45,266 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-07-30 21:19:45,267 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
 2020-07-30 21:19:45,268 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-30 21:19:45,269 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-30 21:19:45,280 [Worker-165: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:02:01,743 [Worker-177: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-30 22:02:06,912 [Worker-177: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-30 22:02:16,283 [Worker-177: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-30 22:02:16,285 [Worker-177: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 22:02:16,287 [Worker-177: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-30 22:02:16,290 [Worker-177: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-30 22:02:20,370 [Worker-177: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-30 22:02:20,401 [Worker-177: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 18 sec
+2020-07-30 22:10:40,287 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:10:40,291 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:10:40,338 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:10:40,367 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:10:40,368 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 22:10:40,369 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-30 22:10:40,371 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-30 22:10:40,531 [Worker-188: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:16:32,627 [Worker-185: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:16:32,638 [Worker-185: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 22:16:32,639 [Worker-185: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-30 22:16:32,663 [Worker-185: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:16:32,664 [Worker-185: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 22:28:22,494 [Worker-206: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:28:22,509 [Worker-206: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:28:22,522 [Worker-206: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:28:22,529 [Worker-206: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:28:22,530 [Worker-206: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 22:47:07,140 [Worker-221: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:47:07,161 [Worker-221: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:47:07,174 [Worker-221: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:47:07,224 [Worker-221: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:47:07,225 [Worker-221: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 22:50:14,284 [Worker-222: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:50:14,296 [Worker-222: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:50:14,310 [Worker-222: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:50:14,321 [Worker-222: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:50:14,322 [Worker-222: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-30 22:55:39,749 [Worker-207: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:55:39,759 [Worker-207: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:55:39,771 [Worker-207: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-30 22:55:39,795 [Worker-207: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-30 22:55:39,796 [Worker-207: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 09:52:12,476 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-31 10:12:22,619 [Worker-14: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 10:12:22,645 [Worker-14: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 10:12:22,689 [Worker-14: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 10:12:22,708 [Worker-14: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 10:12:22,713 [Worker-14: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 10:24:15,722 [Worker-24: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 10:24:15,743 [Worker-24: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 10:24:15,745 [Worker-24: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 10:24:15,751 [Worker-24: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 10:24:15,752 [Worker-24: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 11:06:10,957 [Worker-38: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 11:06:10,975 [Worker-38: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 11:06:10,999 [Worker-38: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 11:06:11,020 [Worker-38: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 11:06:11,020 [Worker-38: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 11:08:31,264 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-31 11:08:36,532 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:authoJPA:0.0.1-SNAPSHOT @ C:\Users\Cristian Jofre\Spring_framework\authoJPA\pom.xml.
+2020-07-31 11:08:50,587 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/main/java
+2020-07-31 11:08:50,593 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-31 11:08:50,597 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /authoJPA/src/main/resources
+2020-07-31 11:08:50,600 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /authoJPA/src/test/java
+2020-07-31 11:09:05,134 [Worker-34: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for authoJPA
+2020-07-31 11:09:05,180 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 33 sec
+2020-07-31 11:11:44,004 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 11:11:44,008 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 11:11:44,186 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 11:11:44,197 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 11:11:44,198 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 11:11:44,199 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of authoJPA
+2020-07-31 11:11:44,202 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for authoJPA
+2020-07-31 11:11:44,273 [Worker-45: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:12:11,860 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:12:12,648 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 12:12:12,660 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 12:12:12,667 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:12:12,667 [Worker-56: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 12:18:50,594 [Worker-62: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:18:50,604 [Worker-62: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 12:18:50,612 [Worker-62: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 12:18:50,619 [Worker-62: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:18:50,619 [Worker-62: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 12:54:00,333 [Worker-61: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:54:00,353 [Worker-61: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 12:54:00,363 [Worker-61: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 12:54:00,370 [Worker-61: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:54:00,372 [Worker-61: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 12:56:54,079 [Worker-70: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:56:54,084 [Worker-70: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 12:56:54,091 [Worker-70: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-31 12:56:54,100 [Worker-70: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:56:54,100 [Worker-70: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\authoJPA\src\test\resources
+2020-07-31 12:58:42,187 [Worker-68: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-31 12:58:42,192 [Worker-68: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-07-31 12:58:42,198 [Worker-68: Launching authoJPA - AuthoJpaApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

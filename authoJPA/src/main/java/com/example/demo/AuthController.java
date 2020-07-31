@@ -5,6 +5,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class AuthController {
+    
+    @RequestMapping(value="/login")
+    public String loginPage() {
+	
+	return "login";
+    }
+    
+    @RequestMapping("/")
+    public String irWelcome() {
+	
+	return "welcome";
+    }
+    
+    @RequestMapping("/ingresosistema")
+    public String irIngresoSistema() {
+	
+	return "ingresosistema";
+    }
 
     @RequestMapping("/sinautorizado")
     public String irPaginauno() {

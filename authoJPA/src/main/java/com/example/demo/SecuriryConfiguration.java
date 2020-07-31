@@ -26,13 +26,16 @@ public class SecuriryConfiguration extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
 	
 	http.authorizeRequests()
-//		.antMatchers("/admin").hasRole("administracion")
+//	.antMatchers("/ingresosistema").hasAnyAuthority("administracion", "profesional") 
 		.antMatchers("/admin").hasAuthority("administracion")   
-//		.antMatchers("/prof").hasRole("profesional")
 		.antMatchers("/prof").hasAuthority("profesional")
-//		.antMatchers("/sinautorizado").hasAnyRole("administracion", "profesional")
 		.antMatchers("/sinautorizado").hasAnyAuthority("administracion", "profesional")   
-		.and().formLogin();
+		.and().formLogin()
+		.loginPage("/login").permitAll()
+//		.defaultSuccessUrl("/")
+		.defaultSuccessUrl("/ingresosistema", true)
+		;
+		
     }
     
     @Bean
