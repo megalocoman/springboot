@@ -33,14 +33,13 @@ public class SecuriryConfiguration extends WebSecurityConfigurerAdapter {
 		.antMatchers("/sinautorizado").hasAnyAuthority("administracion", "profesional")
 		// personaliza pagina de login, y donde entra despues de validar usuario
 		.and().formLogin().loginPage("/login").permitAll().defaultSuccessUrl("/ingresosistema", true)
-		//
+		// login personalizado
 		.and()
 		.logout().invalidateHttpSession(true)
 		.clearAuthentication(true)
 		.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
 		.logoutSuccessUrl("/logout-success").permitAll();
 			
-
     }
 
     @Bean
