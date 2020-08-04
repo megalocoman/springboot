@@ -35,6 +35,9 @@ public class ViewController {
 
     @Autowired
     IntOTService otservice;
+    
+    @Autowired
+    IntACTIVIDADES actividadesservice;
 
     /* Controladores vistas tabla profesional */
 
@@ -214,11 +217,7 @@ public class ViewController {
     }
 
     // tabla ot
-//
-//    @RequestMapping("/menuot")
-//    public String menuot() {
-//	return "menuot";
-//    }
+
 
     @RequestMapping("/listar")
     public String listar(Model model) {
@@ -251,8 +250,50 @@ public class ViewController {
     @RequestMapping(value="/eliminar/{numot}")
     public String deleteOt(@PathVariable Integer numot) {
 	otservice.deleteById(numot);
-//	otservice.delete(numot);
+
 	return "redirect:/listar";
     }
 
+    
+    /*tabla actividades
+     * */
+    
+    
+//    @GetMapping("/menuat")
+//	public String menuat() {
+//		return "menuat";
+//	}
+//	
+	@GetMapping("/listarat")
+	public String listarat(Model model) {
+//		List<ACTIVIDADES> actividades = actividadesservice.findAll();
+		model.addAttribute("actividades", actividadesservice.findAll());
+		return "menuat";
+	}
+
+	@GetMapping("/newat")
+	public String agregarat(Model model){
+		model.addAttribute("actividades", new ACTIVIDADES());
+		return "format";
+	}
+	
+	@PostMapping("/saveat")
+	public String saveat( ACTIVIDADES a, Model model) {
+		actividadesservice.save(a);
+		return "redirect:/listarat";
+	}
+	
+	@GetMapping("/editarat/{codact}")
+	public String editarat(@PathVariable int codact, Model model) {
+//		Optional<ACTIVIDADES> actividades=actividadesservice.findById(codact);
+		model.addAttribute("actividades", actividadesservice.findById(codact));
+		return "formatact";
+	}
+	
+	@GetMapping("/eliminarat/{codact}")
+	public String deleteat(Model model, @PathVariable int codact) {
+		actividadesservice.deleteById(codact);
+		return "redirect:/listarat";
+	}	
+    
 }
