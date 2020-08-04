@@ -11,25 +11,24 @@
 	<table>
 		<thead>
 			<tr>
-				<th>Nombre de cliente</th>
-				<th>Numero de accidentes</th>
-				<th>Numero de actividad</th>
-				<th>valor total de las asesorias</th>
-				<th>Monto pagado del cliente</th>
+				<th>Nombre del profesionales</th>
+				<th>Numero total de actividades</th>
+				<th>Numero total de accidentes</th>
+				<th>Valor total de las actividades</th>
+				<th>Monto recaudao por el cliente</th>
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="${informecliente}" var="informe">
+			<c:forEach items="${informeprofesional}" var="informe">
 				<tr>
 					<td>${informe.getNombrecliente()}</td>
+					<td>${informe.getNumeroactividades()}</td>
 					<td>${informe.getNaccidentes()}</td>
-					<td>${informe.getNactividad()}</td>
 					<td>${informe.getValortotal()}</td>
 					<td>${informe.getValorpagado()}</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
-
 </body>
 </html>

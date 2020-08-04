@@ -13627,3 +13627,20 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2020-08-03 20:44:15,274 [Worker-75: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-08-03 20:44:15,287 [Worker-75: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-08-03 20:44:15,301 [Worker-75: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-08-03 20:44:15,315 [Worker-75: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 20:44:15,315 [Worker-75: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-08-03 22:01:18,116 [Worker-110: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:01:18,126 [Worker-110: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-08-03 22:01:18,135 [Worker-110: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-08-03 22:01:18,145 [Worker-110: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:01:18,146 [Worker-110: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-08-03 22:04:42,480 [Worker-116: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:04:42,489 [Worker-116: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-08-03 22:04:42,500 [Worker-116: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-08-03 22:04:42,511 [Worker-116: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:04:42,512 [Worker-116: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources
+2020-08-03 22:09:27,129 [Worker-120: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:09:27,145 [Worker-120: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-08-03 22:09:27,158 [Worker-120: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-08-03 22:09:27,176 [Worker-120: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-03 22:09:27,177 [Worker-120: Launching jspjpaview - JspjpaviewApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cristian Jofre\Spring_framework\jspjpaview\src\test\resources

@@ -24,7 +24,10 @@ public class ViewController {
     AccidenteDAO accdao;
     
     @Autowired
-    ReporteProfesionalDao repcliente;
+    ReporteProfesionalDao repprof;
+    
+    @Autowired
+    ReporteClienteDAO repcliente;
 
     /* Controladores vistas tabla profesional */
 
@@ -190,11 +193,17 @@ public class ViewController {
 	return  "generacioninformes";
     }
     
+    @RequestMapping(value="/generarinformeprofesional")
+    public String generarInformeProfesional(Model m) {
+	
+	m.addAttribute("informeprofesional", repprof.findAll());
+	return "informegestionprofesional";
+    }
+    
     @RequestMapping(value="/generarinformecliente")
     public String generarInformeCliente(Model m) {
 	
 	m.addAttribute("informecliente", repcliente.findAll());
 	return "informegestioncliente";
-	
     }
 }
