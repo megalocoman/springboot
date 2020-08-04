@@ -1,5 +1,6 @@
 package com.example.demo;
 
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+
 
 @Controller
 public class ViewController {
@@ -19,15 +23,18 @@ public class ViewController {
 
     @Autowired
     ClienteJPADAO cliDao;
-    
+
     @Autowired
     AccidenteDAO accdao;
-    
+
     @Autowired
     ReporteProfesionalDao repprof;
-    
+
     @Autowired
     ReporteClienteDAO repcliente;
+
+    @Autowired
+    IntOTService otservice;
 
     /* Controladores vistas tabla profesional */
 
@@ -73,7 +80,6 @@ public class ViewController {
     @RequestMapping(value = "/actualizarprofesional/{rutprofesional}")
     public String irActualizarProfesional(@PathVariable String rutprofesional, Model m) {
 
-	
 	m.addAttribute("command", profDao.findById(rutprofesional));
 
 	return "redirect:/consultaprofesional";
@@ -123,7 +129,7 @@ public class ViewController {
     public String eliminarClientebyRut(@PathVariable String rutcliente) {
 
 	cliDao.deleteById(rutcliente);
-	
+
 	return "redirect:/consultacliente";
     }
 
@@ -134,76 +140,119 @@ public class ViewController {
 	System.out.println("entro mapping actualizar cliente");
 	return new ModelAndView("actualizarcliente", "command", cliDao.findById(rutcliente));
     }
-    
+
     /* controladores de vistas tabla clientes */
-    
- // Asigna un nuevo objeto Accidente a "command" y envias este a
+
+    // Asigna un nuevo objeto Accidente a "command" y envias este a
     // ingresoaccidente.jsp
 
-    @RequestMapping(value="/paginaingresoaccidente")
+    @RequestMapping(value = "/paginaingresoaccidente")
     public ModelAndView vistaIngresoAccidente() {
 	return new ModelAndView("ingresoaccidente", "command", new Accidente());
     }
-    
-    @GetMapping(value="/ingraccidente")
+
+    @GetMapping(value = "/ingraccidente")
     public String ingresarAccidente(@ModelAttribute("command") Accidente acc) {
 	System.out.println("entro a ingreso de accidente");
-	
+
 	acc.setClientejpa(cliDao.findClienteJPAByNombrecliente(acc.getNombrecliente()));
-	
+
 	accdao.save(acc);
-	
-	
+
 	return "redirect:/consultaacc";
     }
-    
-    @RequestMapping(value="/consultaacc")
+
+    @RequestMapping(value = "/consultaacc")
     public String consultarAccidente(Model m) {
-	
+
 	System.out.println("llena objeto accidente");
 	Iterable<Accidente> acc = accdao.findAll();
 	System.out.println("reemplaza rut por nombre");
-	
-	for(Accidente acci: acc) {
-	    acci.setNombrecliente(cliDao.findNombreclienteByRutcliente(acci.getClientejpa().getRutcliente()));    
+
+	for (Accidente acci : acc) {
+	    acci.setNombrecliente(cliDao.findNombreclienteByRutcliente(acci.getClientejpa().getRutcliente()));
 	}
 	m.addAttribute("listacc", acc);
-	
+
 	return "consultaaccidente";
     }
-    
-    @RequestMapping(value="elimaccidente/{idaccidente}")
+
+    @RequestMapping(value = "elimaccidente/{idaccidente}")
     public String eliminarAccidenteById(@PathVariable int idaccidente) {
-	
+
 	accdao.deleteById(idaccidente);
 	return "redirect:/consultaacc";
     }
-    
-    @RequestMapping(value="/actaccidente/{idaccidente}")
+
+    @RequestMapping(value = "/actaccidente/{idaccidente}")
     public ModelAndView IrPaginaActualizarcliente(@PathVariable int idaccidente, Model m) {
-	
+
 	Optional<Accidente> accidente = accdao.findById(idaccidente);
-	accidente.get().setNombrecliente(cliDao.findNombreclienteByRutcliente(accidente.get().getClientejpa().getRutcliente()));
+	accidente.get().setNombrecliente(
+		cliDao.findNombreclienteByRutcliente(accidente.get().getClientejpa().getRutcliente()));
 	return new ModelAndView("actualizaraccidente", "command", accidente);
     }
-    
-    @RequestMapping(value="/paginagenerarinforme")
+
+    @RequestMapping(value = "/paginagenerarinforme")
     public String irGeneracionInforme() {
-	
-	return  "generacioninformes";
+
+	return "generacioninformes";
     }
-    
-    @RequestMapping(value="/generarinformeprofesional")
+
+    @RequestMapping(value = "/generarinformeprofesional")
     public String generarInformeProfesional(Model m) {
-	
+
 	m.addAttribute("informeprofesional", repprof.findAll());
 	return "informegestionprofesional";
     }
-    
-    @RequestMapping(value="/generarinformecliente")
+
+    @RequestMapping(value = "/generarinformecliente")
     public String generarInformeCliente(Model m) {
-	
+
 	m.addAttribute("informecliente", repcliente.findAll());
 	return "informegestioncliente";
     }
+
+    // tabla ot
+//
+//    @RequestMapping("/menuot")
+//    public String menuot() {
+//	return "menuot";
+//    }
+
+    @RequestMapping("/listar")
+    public String listar(Model model) {
+
+	model.addAttribute("ot", otservice.findAll());
+	return "menuot";
+    }
+
+    @RequestMapping("/new")
+    public String agregar(Model model) {
+	model.addAttribute("command", new OT());
+	return "formot";
+    }
+
+//    @RequestMapping(value="/save", method=RequestMethod.POST)
+    @PostMapping(value="/save")
+    public String save(@ModelAttribute("command") OT o ) {
+	otservice.save(o);
+	return "redirect:/listar";
+    }
+
+    @RequestMapping("/editar/{numot}")
+    public String editar(@PathVariable Integer numot, Model model) {
+
+	model.addAttribute("command", otservice.findById(numot) );
+	return "formotact";
+    }
+
+    
+    @RequestMapping(value="/eliminar/{numot}")
+    public String deleteOt(@PathVariable Integer numot) {
+	otservice.deleteById(numot);
+//	otservice.delete(numot);
+	return "redirect:/listar";
+    }
+
 }
