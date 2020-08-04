@@ -22,6 +22,9 @@ public class ViewController {
     
     @Autowired
     AccidenteDAO accdao;
+    
+    @Autowired
+    ReporteProfesionalDao repcliente;
 
     /* Controladores vistas tabla profesional */
 
@@ -178,12 +181,20 @@ public class ViewController {
 	
 	Optional<Accidente> accidente = accdao.findById(idaccidente);
 	accidente.get().setNombrecliente(cliDao.findNombreclienteByRutcliente(accidente.get().getClientejpa().getRutcliente()));
-	
-	
 	return new ModelAndView("actualizaraccidente", "command", accidente);
-	
-	
     }
     
+    @RequestMapping(value="/paginagenerarinforme")
+    public String irGeneracionInforme() {
+	
+	return  "generacioninformes";
+    }
     
+    @RequestMapping(value="/generarinformecliente")
+    public String generarInformeCliente(Model m) {
+	
+	m.addAttribute("informecliente", repcliente.findAll());
+	return "informegestioncliente";
+	
+    }
 }
