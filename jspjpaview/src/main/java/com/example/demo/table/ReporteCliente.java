@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.table;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,24 +7,23 @@ import org.hibernate.annotations.Immutable;
 import org.hibernate.annotations.Subselect;
 
 @Entity
-@Subselect("SELECT p.nombre as nombrecliente , COUNT(c.nombrecliente) as numeroactividades, COUNT(a.nombre) as naccidentes, SUM(ot.valor) as valortotal, SUM(ot.valor - ot.pago) as valorpagado FROM profesional p JOIN ot ON p.rutprofesional = ot.profesional_rut_profesional INNER JOIN actividades a ON a.codigoactividad=ot.actividades_codigo_actividad INNER JOIN cliente c ON c.rutcliente=ot.cliente_rut_cliente GROUP BY p.nombre")
+@Subselect("SELECT  c.nombre_cliente as nombrecliente, c.count_actividad as nactividad, c.total_valor as valortotal , c.total_pagado as valorpagado, a.accidente as naccidentes FROM ( SELECT c.nombrecliente AS nombre_cliente, COUNT(ot.fecha_actividad) AS count_actividad, SUM(ot.valor) AS total_valor, SUM(ot.pago) AS total_pagado FROM cliente c INNER JOIN ot ON c.rutcliente = ot.cliente_rut_cliente GROUP BY c.nombrecliente) c INNER JOIN (SELECT c.nombrecliente AS nombre_cliente, COUNT(a.idaccidente) AS accidente FROM cliente c INNER JOIN accidente a ON c.rutcliente=a.clienterutcliente GROUP BY c.nombrecliente) a on c.nombre_cliente=a.nombre_cliente")
 @Immutable
-public class ReporteProfesional {
-
+public class ReporteCliente {
+    
     @Id
     private String nombrecliente;
-    private int numeroactividades;
+    private int nactividad;
     private int valortotal;
     private int valorpagado;
     private int naccidentes;
     
-    public ReporteProfesional() {
+    public ReporteCliente() {
     }
 
-    public ReporteProfesional(String nombrecliente, int numeroactividades, int valortotal, int valorpagado,
-	    int naccidentes) {
+    public ReporteCliente(String nombrecliente, int nactividad, int valortotal, int valorpagado, int naccidentes) {
 	this.nombrecliente = nombrecliente;
-	this.numeroactividades = numeroactividades;
+	this.nactividad = nactividad;
 	this.valortotal = valortotal;
 	this.valorpagado = valorpagado;
 	this.naccidentes = naccidentes;
@@ -38,12 +37,12 @@ public class ReporteProfesional {
         this.nombrecliente = nombrecliente;
     }
 
-    public int getNumeroactividades() {
-        return numeroactividades;
+    public int getNactividad() {
+        return nactividad;
     }
 
-    public void setNumeroactividades(int numeroactividades) {
-        this.numeroactividades = numeroactividades;
+    public void setNactividad(int nactividad) {
+        this.nactividad = nactividad;
     }
 
     public int getValortotal() {
@@ -68,6 +67,6 @@ public class ReporteProfesional {
 
     public void setNaccidentes(int naccidentes) {
         this.naccidentes = naccidentes;
-    }
-        
+    }   
+    
 }

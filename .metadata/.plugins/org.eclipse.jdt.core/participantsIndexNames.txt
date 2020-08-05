@@ -5,6 +5,8 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \example\src\main\resources
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3624594179.index
 \ejemploview\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\591836488.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3222765887.index
 \ejercicioJDBCTemplates-2\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\89006070.index
@@ -27,10 +29,10 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \examplespring\src\main\resources
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4114034961.index
 \ejemplesimple\src\main\java
-C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1827604891.index
-\nino\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3518108283.index
 \mod5global11-3
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1827604891.index
+\nino\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3395102058.index
 \viewmvc1\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\90412098.index
@@ -43,6 +45,8 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \excersice\src\main\resources
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1373943961.index
 \empresaseguridad\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\671472922.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2527038003.index
 \examplejar\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3464461664.index
@@ -53,8 +57,14 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4209149474.index
 \examplejar\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3265715011.index
+\jspjpaview\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2633375079.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3376260508.index
 \pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1333222156.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\356844904.index
 \empresaseguridad\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1948274304.index
@@ -63,8 +73,12 @@ C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.
 \examplejar\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3513604998.index
 \ninoexample\src\main\resources
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4227238977.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2069271701.index
 \pruebauno\src\main\java
+C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2632728326.index
+\jspjpaview\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\184518031.index
 \authoJPA\src\main\java
 C:\Users\Cristian Jofre\Spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\855843752.index

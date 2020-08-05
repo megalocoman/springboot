@@ -1,9 +1,11 @@
-package com.example.demo;
+package com.example.demo.repositorios;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import com.example.demo.table.ClienteJPA;
 
 @Repository
 public interface ClienteJPADAO extends CrudRepository<ClienteJPA, String> {

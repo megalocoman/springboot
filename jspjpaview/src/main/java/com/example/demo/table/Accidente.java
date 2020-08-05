@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.table;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,8 +17,8 @@ import javax.persistence.Transient;
 public class Accidente {
     
     @Id
-//    @SequenceGenerator(name="seq",sequenceName="sequenceaccidente")        
-//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
+    @SequenceGenerator(name="seq",sequenceName="SEQUENCEACCIDENTE", allocationSize = 1)        
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
     private int idaccidente;
     @Column(name="descripcion")
     private String descripsion;

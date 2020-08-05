@@ -21,6 +21,12 @@
 	</properties>
 
 	<dependencies>
+		<!-- spring security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- spring security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -41,8 +47,6 @@
 			<artifactId>servlet-api</artifactId>
 			<version>3.0-alpha-1</version>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -67,10 +71,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- base de datos y jdbc templates -->
-		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-jdbc</artifactId> 
-			</dependency> -->
-
+		<!-- base de datos -->
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc8</artifactId>
@@ -78,7 +79,7 @@
 			<scope>system</scope>
 			<systemPath> C:\Users\Cristian Jofre\.m2\repository\com\oracle\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar</systemPath>
 		</dependency>
-		<!-- base de datos y jdbc templates -->
+		<!-- base de datos -->
 
 		<!-- c3p0, pool connection -->
 		<dependency>
@@ -106,7 +107,12 @@
 		</dependency>
 		<!-- log4j, es para log de las acciones del programa -->
 
-
+		<!-- security tags -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+		</dependency>
+		<!-- security tags -->
 
 	</dependencies>
 

@@ -13,6 +13,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.repositorios.AccidenteDAO;
+import com.example.demo.repositorios.ClienteJPADAO;
+import com.example.demo.repositorios.IntACTIVIDADES;
+import com.example.demo.repositorios.IntOTService;
+import com.example.demo.repositorios.ProfesionalJPADAO;
+import com.example.demo.repositorios.ReporteClienteDAO;
+import com.example.demo.repositorios.ReporteProfesionalDao;
+import com.example.demo.table.ACTIVIDADES;
+import com.example.demo.table.Accidente;
+import com.example.demo.table.ClienteJPA;
+import com.example.demo.table.OT;
+import com.example.demo.table.ProfesionalJPA;
+
 
 
 @Controller
@@ -38,6 +51,41 @@ public class ViewController {
     
     @Autowired
     IntACTIVIDADES actividadesservice;
+    
+    
+    /* controla login de vistas
+     * */
+    
+    @RequestMapping(value="/login")
+    public String loginPage() {
+	
+	return "accesos/login";
+    }
+    
+    @RequestMapping("/")
+    public String irWelcome() {
+	
+	return "accesos/welcome";
+    }
+    
+    @RequestMapping("/ingresosistema")
+    public String irIngresoSistema() {
+	
+	return "accesos/ingresosistema";
+    }
+    
+    @RequestMapping(value="/logout-success")
+    public String logoutPage() {
+	
+	return "accesos/logout";
+    }
+    
+    @RequestMapping(value="/403")
+    public String irAccesodenegado() {
+	
+	return "accesos/accesodenegado";
+    }
+    
 
     /* Controladores vistas tabla profesional */
 
@@ -47,7 +95,7 @@ public class ViewController {
     @RequestMapping(value = "/paginaingresoprofesional")
     public ModelAndView vistaIngresoProfesional() {
 
-	return new ModelAndView("ingresoprofesional", "command", new ProfesionalJPA());
+	return new ModelAndView("profesional/ingresoprofesional", "command", new ProfesionalJPA());
     }
 
     // recibe objeto ProfesionalJPA y lo ingresa en la base de datos
@@ -65,7 +113,7 @@ public class ViewController {
 //	
 	Iterable<ProfesionalJPA> listprof = profDao.findAll();
 	m.addAttribute("listprof", listprof);
-	return "consultaprofesional";
+	return "profesional/consultaprofesional";
     }
 
     // elimina registros en base de datos sugun rut indicado, y redireciona a
@@ -85,7 +133,7 @@ public class ViewController {
 
 	m.addAttribute("command", profDao.findById(rutprofesional));
 
-	return "redirect:/consultaprofesional";
+	return "profesional/actualizarprofesional";
     }
 
     // actualiza registro segun rut indicado, redirecciona a a vista
@@ -104,7 +152,7 @@ public class ViewController {
     @RequestMapping(value = "/paginaingresocliente")
     public ModelAndView vistaIngresoCliente() {
 	System.out.println("entro mapping ingresocliente");
-	return new ModelAndView("ingresocliente", "command", new ClienteJPA());
+	return new ModelAndView("clientes/ingresocliente", "command", new ClienteJPA());
 
     }
 
@@ -123,7 +171,7 @@ public class ViewController {
     public String consultarClientes(Model m) {
 
 	m.addAttribute("listcli", cliDao.findAll());
-	return "consultacliente";
+	return "clientes/consultacliente";
     }
 
     // elimina registros de clientes en base de datos segun rut indicado, y
@@ -141,7 +189,7 @@ public class ViewController {
     @RequestMapping(value = "/actualizarcliente/{rutcliente}")
     public ModelAndView irActualizarCliente(@PathVariable String rutcliente, Model m) {
 	System.out.println("entro mapping actualizar cliente");
-	return new ModelAndView("actualizarcliente", "command", cliDao.findById(rutcliente));
+	return new ModelAndView("clientes/actualizarcliente", "command", cliDao.findById(rutcliente));
     }
 
     /* controladores de vistas tabla clientes */
@@ -151,7 +199,7 @@ public class ViewController {
 
     @RequestMapping(value = "/paginaingresoaccidente")
     public ModelAndView vistaIngresoAccidente() {
-	return new ModelAndView("ingresoaccidente", "command", new Accidente());
+	return new ModelAndView("accidente/ingresoaccidente", "command", new Accidente());
     }
 
     @GetMapping(value = "/ingraccidente")
@@ -177,7 +225,7 @@ public class ViewController {
 	}
 	m.addAttribute("listacc", acc);
 
-	return "consultaaccidente";
+	return "accidente/consultaaccidente";
     }
 
     @RequestMapping(value = "elimaccidente/{idaccidente}")
@@ -193,27 +241,30 @@ public class ViewController {
 	Optional<Accidente> accidente = accdao.findById(idaccidente);
 	accidente.get().setNombrecliente(
 		cliDao.findNombreclienteByRutcliente(accidente.get().getClientejpa().getRutcliente()));
-	return new ModelAndView("actualizaraccidente", "command", accidente);
+	return new ModelAndView("accidente/actualizaraccidente", "command", accidente);
     }
 
+    /*
+     * vistas generar informe
+     * */
     @RequestMapping(value = "/paginagenerarinforme")
     public String irGeneracionInforme() {
 
-	return "generacioninformes";
+	return "informes/generacioninformes";
     }
 
     @RequestMapping(value = "/generarinformeprofesional")
     public String generarInformeProfesional(Model m) {
 
 	m.addAttribute("informeprofesional", repprof.findAll());
-	return "informegestionprofesional";
+	return "informes/informegestionprofesional";
     }
 
     @RequestMapping(value = "/generarinformecliente")
     public String generarInformeCliente(Model m) {
 
 	m.addAttribute("informecliente", repcliente.findAll());
-	return "informegestioncliente";
+	return "informes/informegestioncliente";
     }
 
     // tabla ot
@@ -223,13 +274,13 @@ public class ViewController {
     public String listar(Model model) {
 
 	model.addAttribute("ot", otservice.findAll());
-	return "menuot";
+	return "ot/menuot";
     }
 
     @RequestMapping("/new")
     public String agregar(Model model) {
 	model.addAttribute("command", new OT());
-	return "formot";
+	return "ot/formot";
     }
 
 //    @RequestMapping(value="/save", method=RequestMethod.POST)
@@ -243,7 +294,7 @@ public class ViewController {
     public String editar(@PathVariable Integer numot, Model model) {
 
 	model.addAttribute("command", otservice.findById(numot) );
-	return "formotact";
+	return "ot/formotact";
     }
 
     
@@ -259,22 +310,18 @@ public class ViewController {
      * */
     
     
-//    @GetMapping("/menuat")
-//	public String menuat() {
-//		return "menuat";
-//	}
-//	
+	
 	@GetMapping("/listarat")
 	public String listarat(Model model) {
 //		List<ACTIVIDADES> actividades = actividadesservice.findAll();
 		model.addAttribute("actividades", actividadesservice.findAll());
-		return "menuat";
+		return "actividad/menuat";
 	}
 
 	@GetMapping("/newat")
 	public String agregarat(Model model){
 		model.addAttribute("actividades", new ACTIVIDADES());
-		return "format";
+		return "actividad/format";
 	}
 	
 	@PostMapping("/saveat")
@@ -287,7 +334,7 @@ public class ViewController {
 	public String editarat(@PathVariable int codact, Model model) {
 //		Optional<ACTIVIDADES> actividades=actividadesservice.findById(codact);
 		model.addAttribute("actividades", actividadesservice.findById(codact));
-		return "formatact";
+		return "actividad/formatact";
 	}
 	
 	@GetMapping("/eliminarat/{codact}")

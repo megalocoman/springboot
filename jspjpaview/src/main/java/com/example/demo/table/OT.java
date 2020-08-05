@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.table;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
