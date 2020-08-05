@@ -6,17 +6,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"   >
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/js/validaciones.js"></script>
 </head>
 <body>
-<form:form method="get"  action="/ingraccidente">
+<div class="container mt-4">
+	<div class="col-sm-4">
+		<form:form method="get"  action="/ingraccidente">
+			<div class="card">
+				<div class="card-header"></div>
+				<div class="card-body"></div>
+				
+				<div class="form-group">
+					<label>Nombre Cliente</label>
+					 <form:input path="nombrecliente" class="form-control"/>
+				</div>
+				<div class="form-group">
+					<label>Ingreso descripsion</label>
+					 <form:input path="descripsion" class="form-control"/>
+				</div>
+				<div class="form-group">
+					<label>Fecha accidente</label>
+					 <form:input path="fechaaccidente" class="form-control"/>
+				</div>
 
-Nombre Cliente <form:input path="nombrecliente"/><br>
-Ingreso descripsion: <form:input path="descripsion"/><br>
-Fecha accidente: <form:input path="fechaaccidente"/><br>
-<form:hidden path="idaccidente"/>
-<input type="submit" value="ingresar accidente">
+				<form:hidden path="idaccidente"/>
+				<div class="card-footer"></div>
+				<input type="submit" value="ingresar accidente" class="btn btn-sucess">
+					
+			</div>
+		</form:form>
+	</div>
 
-</form:form>
+</div>
+
 </body>
 </html>
