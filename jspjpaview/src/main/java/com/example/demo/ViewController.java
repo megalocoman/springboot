@@ -53,30 +53,36 @@ public class ViewController {
      * controla login de vistas
      */
 
+    // envia a vista login, para validar usuario
     @RequestMapping(value = "/login")
     public String loginPage() {
 
 	return "accesos/login";
     }
 
+    // envia vista principal
     @RequestMapping("/")
     public String irWelcome() {
 
 	return "accesos/welcome";
     }
 
+    // vista posterios a validacion objeto, menu a tablas
     @RequestMapping("/ingresosistema")
     public String irIngresoSistema() {
 
 	return "accesos/ingresosistema";
     }
 
+    // envia cuando se deslogue el usuario
     @RequestMapping(value = "/logout-success")
     public String logoutPage() {
 
 	return "accesos/logout";
     }
 
+    // indica que no se tiene atributo para ingrear a esta vista, link a menu
+    // principal
     @RequestMapping(value = "/403")
     public String irAccesodenegado() {
 
@@ -118,7 +124,6 @@ public class ViewController {
     public String eliminarProfesionalbyRut(@PathVariable String rutprofesional) {
 
 	profDao.deleteById(rutprofesional);
-
 	return "redirect:/consultaprofesional";
     }
 
@@ -128,7 +133,6 @@ public class ViewController {
     public String irActualizarProfesional(@PathVariable String rutprofesional, Model m) {
 
 	m.addAttribute("command", profDao.findById(rutprofesional));
-
 	return "profesional/actualizarprofesional";
     }
 
@@ -176,7 +180,6 @@ public class ViewController {
     public String eliminarClientebyRut(@PathVariable String rutcliente) {
 
 	cliDao.deleteById(rutcliente);
-
 	return "redirect:/consultacliente";
     }
 
@@ -184,6 +187,7 @@ public class ViewController {
     // consultacliente.jsp
     @RequestMapping(value = "/actualizarcliente/{rutcliente}")
     public ModelAndView irActualizarCliente(@PathVariable String rutcliente, Model m) {
+	
 	System.out.println("entro mapping actualizar cliente");
 	return new ModelAndView("clientes/actualizarcliente", "command", cliDao.findById(rutcliente));
     }
@@ -195,9 +199,12 @@ public class ViewController {
 
     @RequestMapping(value = "/paginaingresoaccidente")
     public ModelAndView vistaIngresoAccidente() {
+	
 	return new ModelAndView("accidente/ingresoaccidente", "command", new Accidente());
     }
 
+    // recibe objeto desde form ingreso de cliente , cambia el nombre por el rut de
+    // cliente respectivo e ingresa en tabla accidentes
     @GetMapping(value = "/ingraccidente")
     public String ingresarAccidente(@ModelAttribute("command") Accidente acc) {
 
@@ -206,6 +213,9 @@ public class ViewController {
 	return "redirect:/consultaacc";
     }
 
+    // consulta la tabla accidentes, devolviendo un una lista de objetos que
+    // posterior reemplazar el rut del cliente por el nombre de este, enviado la
+    // lista a vista consultaaccidente
     @RequestMapping(value = "/consultaacc")
     public String consultarAccidente(Model m) {
 
@@ -214,10 +224,10 @@ public class ViewController {
 	    acci.setNombrecliente(cliDao.findNombreclienteByRutcliente(acci.getClientejpa().getRutcliente()));
 	}
 	m.addAttribute("listacc", acc);
-
 	return "accidente/consultaaccidente";
     }
 
+    // elimina fila de tabla accidente, segun el id solicitado
     @RequestMapping(value = "elimaccidente/{idaccidente}")
     public String eliminarAccidenteById(@PathVariable int idaccidente) {
 
@@ -225,6 +235,8 @@ public class ViewController {
 	return "redirect:/consultaacc";
     }
 
+    // busca registro segun id, lo ingresa en un objeto accidente, buscar el nmbre
+    // por rut cliente y lo ingresa al objeto y eniva a vista actualizaraccidente
     @RequestMapping(value = "/actaccidente/{idaccidente}")
     public ModelAndView IrPaginaActualizarcliente(@PathVariable int idaccidente, Model m) {
 
@@ -237,12 +249,16 @@ public class ViewController {
     /*
      * vistas generar informe
      */
+
+    // envia a vista generacioninformes
     @RequestMapping(value = "/paginagenerarinforme")
     public String irGeneracionInforme() {
 
 	return "informes/generacioninformes";
     }
 
+    // entrega objeto ibformeprofesional y envia a vista informegestionprofesional
+    // que genera u a tabla con los datos
     @RequestMapping(value = "/generarinformeprofesional")
     public String generarInformeProfesional(Model m) {
 
@@ -250,6 +266,8 @@ public class ViewController {
 	return "informes/informegestionprofesional";
     }
 
+    // entrega objeto informecliente y envia a vista informegestioncliente
+    // que genera u a tabla con los datos
     @RequestMapping(value = "/generarinformecliente")
     public String generarInformeCliente(Model m) {
 
@@ -259,6 +277,8 @@ public class ViewController {
 
     // tabla ot
 
+    // buscar todo lso registos de tabla ot y los asigna a lista de objetos, la
+    // cual se envia a vista menuot
     @RequestMapping("/listar")
     public String listar(Model model) {
 
@@ -266,19 +286,24 @@ public class ViewController {
 	return "ot/menuot";
     }
 
+    // instancia objeto vacio ot y lo manda a vista formot para que datos sean
+    // ingresados
     @RequestMapping("/new")
     public String agregar(Model model) {
+	
 	model.addAttribute("command", new OT());
 	return "ot/formot";
     }
 
-//    @RequestMapping(value="/save", method=RequestMethod.POST)
+    // ingrea datos de objeto Ot a tabla OT, posterior redirecciona a metodo listar
     @PostMapping(value = "/save")
     public String save(@ModelAttribute("command") OT o) {
+	
 	otservice.save(o);
 	return "redirect:/listar";
     }
 
+    // busca registro segun numero ot y envia como objeto OT a vista formotact
     @RequestMapping("/editar/{numot}")
     public String editar(@PathVariable Integer numot, Model model) {
 
@@ -286,10 +311,11 @@ public class ViewController {
 	return "ot/formotact";
     }
 
+    //
     @RequestMapping(value = "/eliminar/{numot}")
     public String deleteOt(@PathVariable Integer numot) {
+	
 	otservice.deleteById(numot);
-
 	return "redirect:/listar";
     }
 
@@ -297,36 +323,46 @@ public class ViewController {
      * tabla actividades
      */
 
+    // genera lista de objetos con la informacion de la tabla actividades y la envia
+    // avista format
     @GetMapping("/listarat")
     public String listarat(Model model) {
-//		List<ACTIVIDADES> actividades = actividadesservice.findAll();
+	
 	model.addAttribute("actividades", actividadesservice.findAll());
 	return "actividad/menuat";
     }
 
+    // genera instancia objeto vacio actividades y lo envia a vista format para
+    // ingreso de datos
     @GetMapping("/newat")
     public String agregarat(Model model) {
+	
 	model.addAttribute("actividades", new ACTIVIDADES());
 	return "actividad/format";
     }
 
+    // ingresa datos a de objeto actividades a tabla actividades, redireccionando a
+    // listarat, para generar tabla
     @PostMapping("/saveat")
     public String saveat(ACTIVIDADES a, Model model) {
+	
 	actividadesservice.save(a);
 	return "redirect:/listarat";
     }
 
+    // busca registro segun id y envia objeto a formatact modificarlo
     @GetMapping("/editarat/{codact}")
     public String editarat(@PathVariable int codact, Model model) {
-//		Optional<ACTIVIDADES> actividades=actividadesservice.findById(codact);
+	
 	model.addAttribute("actividades", actividadesservice.findById(codact));
 	return "actividad/formatact";
     }
 
+    // elimina registo segun id y reedirecciona a vista listarat
     @GetMapping("/eliminarat/{codact}")
     public String deleteat(Model model, @PathVariable int codact) {
+	
 	actividadesservice.deleteById(codact);
 	return "redirect:/listarat";
     }
-
 }

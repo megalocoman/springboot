@@ -13911,3 +13911,156 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-08-05 17:38:14.928
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-08-05 18:04:46.359
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-08-05 18:21:17.797
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:50.713
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.MJILruWG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:50.716
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.MJILruWG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:50.718
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:50.721
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.MJILruWG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:56.229
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:56.231
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1db7a4ae[org.springframework.tooling.boot.ls:1.19.0.202006181152(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:21:56.234
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:05.823
+!MESSAGE Boot LS startup time from start to initialized: 9584ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.010
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YrSNSRdeisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.013
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.017
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.020
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.021
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.024
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.025
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YrSNSRde => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.029
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.149
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.171
+!MESSAGE buffering callback sts4.classpath.YrSNSRde jspjpaview false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.174
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.281
+!MESSAGE classpath=119 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.315
+!MESSAGE buffering callback sts4.classpath.YrSNSRde SecuritySpring false 119
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.317
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.343
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.358
+!MESSAGE buffering callback sts4.classpath.YrSNSRde authoJPA false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.361
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.364
+!MESSAGE classpath=21 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.368
+!MESSAGE buffering callback sts4.classpath.YrSNSRde mod5global11-3 false 21
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.370
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.423
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.448
+!MESSAGE buffering callback sts4.classpath.YrSNSRde pruebauno false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.450
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.484
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.500
+!MESSAGE buffering callback sts4.classpath.YrSNSRde thymeview false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.501
+!MESSAGE executing callback sts4.classpath.YrSNSRde 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:22:06.673
+!MESSAGE executing callback sts4.classpath.YrSNSRde SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:23:27.127
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YrSNSRde
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:23:27.130
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.YrSNSRde
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:23:27.133
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 18:23:27.134
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YrSNSRde => OK
