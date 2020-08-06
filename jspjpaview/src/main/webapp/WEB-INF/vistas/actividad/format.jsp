@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,14 +19,14 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+<script type="text/javascript" src="validaciones.js"></script>
 <!-- <meta charset="ISO-8859-1"> -->
 </head>
 <body>
 	<h3>Ingreso Actividad</h3>
 	<div class="container mt-6">
 		<div class="col-sm-2">
-			<form action="/saveat" method="POST">
+			<form:form action="/saveat" method="POST"   onsubmit="return validarActividad();">
 				<div class="card">
 					<div class="card-header"></div>
 
@@ -35,15 +36,17 @@
 <!-- 						<input th:field="*{idacc}" type="text" class="form-control"  readonly/> -->
 <!-- 					</div> -->
 					<div class="form-group">
-						<label>Nombre</label> <input name="nomact" class="form-control" />
+						<label>Nombre</label>
+						<form:input path="nomact" name="nomact" id="nomact" class="form-control"/>
 					</div>
 					<div class="form-group">
-						<label>Descripcion</label> <input name="descact" class="form-control" />
+						<label>Descripcion</label>
+						<form:input path="descact" name="descact" id="descact" class="form-control"/>
 					</div>
 					<div class="card-footer"></div>
-					<input type="submit" value="Grabar" name="btn btn-sucess" />
+					<input type="submit" value="Grabar" name="btn  btn-sucess" />
 				</div>
-			</form>
+			</form:form>
 		</div>
 	</div>
 </body>

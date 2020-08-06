@@ -16,27 +16,27 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+ <script type="text/javascript" src="/validaciones.js"></script>
 </head>
 <body>
 <div class="container mt-4">
 	<div class="col-sm-4">
-		<form:form method="get"  action="/ingraccidente">
+		<form:form method="get"  action="/ingraccidente" onsubmit="return validaraccidente();">
 			<div class="card">
 				<div class="card-header"></div>
 				<div class="card-body"></div>
 				
 				<div class="form-group">
 					<label>Nombre Cliente</label>
-					 <form:input path="nombrecliente" class="form-control"/>
+					 <form:input path="nombrecliente" id="nombrecliente"  class="form-control"/>
 				</div>
 				<div class="form-group">
 					<label>Ingreso descripsion</label>
-					 <form:input path="descripsion" class="form-control"/>
+					 <form:input path="descripsion" id="descripsion" class="form-control"/>
 				</div>
 				<div class="form-group">
 					<label>Fecha accidente</label>
-					 <form:input path="fechaaccidente" class="form-control"/>
+					 <form:input path="fechaaccidente" id="fechaaccidente" class="form-control"/>
 				</div>
 
 				<form:hidden path="idaccidente"/>

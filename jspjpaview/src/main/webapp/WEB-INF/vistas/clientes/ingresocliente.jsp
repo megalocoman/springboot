@@ -18,38 +18,38 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+        <script type="text/javascript" src="validaciones.js"></script>
 </head>
 <body>
 <h1>ingrese registro de clientes</h1>
 
 <div class="container mt-2">
 	<div class="col-sm-4">
-		<form:form method="get"  action="/ingrcliente">
+		<form:form method="get"  action="/ingrcliente" onsubmit="return validarCliente();">
 		<div class="card">
 			<div class="form-group">
 			<label>Rut cliente</label>
-			<form:input path="rutcliente" name="rutcliente" class="form-control"/>
+			<form:input path="rutcliente" name="rutcliente" id="rutcliente" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>Nombre</label>
-			<form:input path="nombrecliente" name="nombrecliente" class="form-control"/>
+			<form:input path="nombrecliente" name="nombrecliente" id="nombrecliente" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>Direccion</label>
-				<form:input path="direccion" name="direccion" class="form-control"/>
+				<form:input path="direccion" name="direccion" id="direccion" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>Telefono</label>
-				<form:input path="telefono" name="telefono" class="form-control"/>
+				<form:input path="telefono" name="telefono"  id="telefono" class="form-control"/>
 			</div>
 			<div class="form-group">\
 			<label>Correo</label>
-				<form:input path="correo" name="correo" class="form-control"/>
+				<form:input path="correo" name="correo" id="correo" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>Contacto</label>
-				 <form:input path="contacto" name="contacto" class="form-control"/>
+				 <form:input path="contacto" name="contacto" id="contacto" class="form-control"/>
 			</div>
 			
 			<input type="submit" value="ingresar cliente" class="btn btn-sucess">

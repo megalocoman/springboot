@@ -16,30 +16,30 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+ <script type="text/javascript" src="/validaciones.js"></script>
 </head>
 <body>
 <div class="container mt-4">
 	<div class="col-sm-4">
-		<form:form method="get"  action="/actprofesional">
+		<form:form method="get" action="/actprofesional" onsubmit="return validarProfesional();">
 		<div class="card">
 			<div class="card-header"></div>
 			<div class="card-body"></div>
 			<div class="form-group">
 			<label>Rut cliente</label>
-			<form:input path="rutprofesional" class="form-control"/>
+			<form:input path="rutprofesional" id="rutprofesional" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>nombre</label>
-			<form:input path="nombre" class="form-control"/>
+			<form:input path="nombre" id="nombre"  class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>correo</label>
-			<form:input path="correo" class="form-control"/>
+			<form:input path="correo" id="correo" class="form-control"/>
 			</div>
 			<div class="form-group">
 			<label>telefono</label>
-			<form:input path="telefono" class="form-control"/>
+			<form:input path="telefono" id="telefono" class="form-control"/>
 			<div class="card-footer"></div>
 			<input type="submit" value="ingresar cliente" class="btn btn-sucess">
 			</div>

@@ -18,14 +18,14 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+<script type="text/javascript" src="/validaciones.js"></script>
 <!-- <meta charset="ISO-8859-1"> -->
 </head>
 <body>
 	<h3>Actualiza OT</h3>
 	<div class="container mt-4">
 		<div class="col-sm-4">
-			<form:form action="/save" method="POST" >
+			<form:form action="/save" method="POST" onsubmit="return validarOT();">
 				<div class="card">
 					<div class="card-header"></div>
 
@@ -40,27 +40,27 @@
 					</div>
 					<div class="form-group">
 						<label>Valor</label>
-						<form:input type="text" path="val" class="form-control"  />
+						<form:input type="text" path="val" id="val"  class="form-control"  />
 					</div>
 					<div class="form-group">
 						<label>Pago</label>
-						<form:input type="text" path="pag" class="form-control"  />
+						<form:input type="text" path="pag" id="pag" class="form-control"  />
 					</div>
 					<div class="form-group">
 						<label>Status actividad</label>
-						<form:input type="text" path="statact" class="form-control" />
+						<form:input type="text" path="statact" id="statact" class="form-control" />
 					</div>
 					<div class="form-group">
 						<label>Rut cliente</label>
-						<form:input type="text" path="rutcli" class="form-control" />
+						<form:input type="text" path="rutcli" id="rutcli" class="form-control" />
 					</div>
 					<div class="form-group">
 						<label>Rut profesional</label>
-						<form:input type="text" path="rutprof" class="form-control"  />
+						<form:input type="text" path="rutprof" id="rutprof" class="form-control"  />
 					</div>
 					<div class="form-group">
 						<label>Codigo actividad</label>
-						<form:input type="text" path="codact" class="form-control"  />
+						<form:input type="text" path="codact" id="codact" class="form-control"  />
 					</div>
 
 					<div class="card-footer"></div>

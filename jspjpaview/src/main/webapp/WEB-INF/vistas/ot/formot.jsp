@@ -19,14 +19,13 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
-<!-- <meta charset="ISO-8859-1"> -->
+<script type="text/javascript" src="validaciones.js"></script>
 </head>
 <body>
 	<h3>Ingreso OT</h3>
 	<div class="container mt-2">
 		<div class="col-sm-4">
-			<form:form action="/save" method="POST" >
+			<form:form action="/save" method="POST" onsubmit="return validarOT();">
 				<div class="card">
 					<div class="card-header"></div>
 
@@ -41,22 +40,22 @@
 						<label>Fecha actividad</label> <form:input name="fecact" path="fecact"   id="datepicker"  class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Valor</label> <form:input name="val" path="val" class="form-control" />
+						<label>Valor</label> <form:input name="val" path="val" id="val" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Pago</label> <form:input name="pag" path="pag" class="form-control" />
+						<label>Pago</label> <form:input name="pag" path="pag" id="pag" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Status actividad</label> <form:input name="statact" path="statact" class="form-control" />
+						<label>Status actividad</label> <form:input name="statact" id="statact" path="statact" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Rut cliente</label> <form:input name="rutcli" path="rutcli" class="form-control" />
+						<label>Rut cliente</label> <form:input name="rutcli" path="rutcli" id="rutcli" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Rut profesional</label> <form:input name="rutprof" path="rutprof" class="form-control" />
+						<label>Rut profesional</label> <form:input name="rutprof" path="rutprof" id="rutprof" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Codigo actividad</label> <form:input name="codact" path="codact"  class="form-control" />
+						<label>Codigo actividad</label> <form:input name="codact" path="codact" id="codact"  class="form-control" />
 					</div>
 
 					<div class="card-footer"></div>

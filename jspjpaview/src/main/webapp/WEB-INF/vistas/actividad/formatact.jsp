@@ -18,14 +18,14 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+<script type="text/javascript" src="/validaciones.js"></script>
 <!-- <meta charset="ISO-8859-1"> -->
 </head>
 <body>
 	<h3>Actualiza Actividad</h3>
 	<div class="container mt-4">
 		<div class="col-sm-4">
-			<form:form action="/saveat" method="POST" modelAttribute="actividades">
+			<form:form action="/saveat" method="POST" modelAttribute="actividades" onsubmit="return validarActividad();">
 				<div class="card">
 					<div class="card-header"></div>
 
@@ -36,11 +36,11 @@
 					</div>
 					<div class="form-group">
 						<label>Nombre</label>
-						<form:input path="nomact"  class="form-control"/>
+						<form:input path="nomact" id="nomact" class="form-control"/>
 					</div>
 					<div class="form-group">
 						<label>Descripcion</label>
-						<form:input path="descact"  class="form-control"/>
+						<form:input path="descact" id="descact" class="form-control"/>
 					</div>
 					<div class="card-footer"></div>
 					<input type="submit" value="Grabar" class="btn btn-sucess" />

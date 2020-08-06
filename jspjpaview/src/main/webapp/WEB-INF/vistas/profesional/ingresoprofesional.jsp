@@ -19,22 +19,22 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+ <script type="text/javascript" src="validaciones.js"></script>
 </head>
 <body>
 <h1>Ingrese su cliente</h1>
 <div class="container mt-2">
 	<div class="col-sm-4">
-		<form:form method="get"  action="/ingprofesional">
+		<form:form method="get"  action="/ingprofesional" onsubmit="return validarProfesional();">
 		<div class="card">
 			<label>Rut profesional</label>
-			<form:input path="rutprofesional" name="rutprofesional" class="form-control"/>
+			<form:input path="rutprofesional" name="rutprofesional" id="rutprofesional" class="form-control"/>
 			<label>Nombre</label>
-			<form:input path="nombre" name="nombre" class="form-control"/>
+			<form:input path="nombre" name="nombre" id="nombre"  class="form-control"/>
 			<label>Correo</label>
-			<form:input path="correo" name="correo" class="form-control"/>
+			<form:input path="correo" name="correo" id="correo" class="form-control"/>
 			<label>Telefono</label>
-			<form:input path="telefono" name="telefono" class="form-control"/>
+			<form:input path="telefono" name="telefono" id="telefono" class="form-control"/>
 			<input type="submit" value="ingresar profesional" class="btn btn-sucess">
 		</div>
 		
