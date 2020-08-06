@@ -17,36 +17,44 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/validaciones.js"></script>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+       
+        <script type="text/javascript" src="validaciones.js"></script>
 </head>
 <body>
 
 	<div class="container mt-2">
 		<div class="col-sm-4">	
-			<form:form method="get"  action="/ingraccidente">
+			<form:form class="cmxform" id="ingresoaccidente" method="get"  action="/ingraccidente" onsubmit="return validaraccidente();">
 			<div class="card">
 				<div class="form-group">
 					<label>Nombre Cliente</label>
-					<form:input path="nombrecliente" name="nombrecliente" class="form-control"/>
+					<form:input path="nombrecliente"  id="nombrecliente" name="nombrecliente" class="form-control"/>
 				</div>
 				
 				<div class="form-group">
-					<label>Ingreso descripsion: </label><form:input path="descripsion" name="descripsion" class="form-control"/>
+					<label>Ingreso descripsion: </label><form:input path="descripsion"  id="descripsion" name="descripsion" class="form-control"/>
 				</div>
 				
 				<div class="form-group">
 					<label>Fecha accidente: </label>
-					<form:input path="fechaaccidente" name="fechaaccidente" class="form-control"/>
+					<form:input path="fechaaccidente"  id="fechaaccidente" name="fechaaccidente" class="form-control"/>
 				</div>
 				
-			<input type="submit" value="ingresar accidente" class="btn btn-sucess">
+			<input type="submit" class="submit" value="ingresar accidente" class="btn btn-sucess">
 			</div>
 			</form:form>
 			
 			<a href="/consultaacc">ir a consulta de accidente</a>
 		</div>
 
+
+
 	</div>
+	
 
 </body>
 </html>
