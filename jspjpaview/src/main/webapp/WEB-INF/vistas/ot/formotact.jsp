@@ -36,7 +36,7 @@
 					</div>
 					<div class="form-group">
 						<label>Fecha actividad</label>
-						<form:input path="fecact"  type="date" id="datepicker" class="form-control"  />
+						<form:input path="fecact"  type="text" id="datepicker" class="form-control"  />
 					</div>
 					<div class="form-group">
 						<label>Valor</label>

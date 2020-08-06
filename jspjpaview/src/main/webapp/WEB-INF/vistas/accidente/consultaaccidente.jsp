@@ -28,7 +28,8 @@
 					<tr>
 						<td>${acc.nombrecliente}</td>
 						<td>${acc.descripsion}</td>
-						<td>${acc.fechaaccidente}</td>
+						<td><fmt:formatDate value="${acc.fechaaccidente}"/></td>
+<%-- 						<td>${acc.fechaaccidente}</td> --%>
 						<td><a href="/elimaccidente/${acc.idaccidente}" class="btn btn-warning">Eliminar</a></td>
 						<td><a href="/actaccidente/${acc.idaccidente}" class="btn btn-danger">Actualizar</a></td>
 					</tr>

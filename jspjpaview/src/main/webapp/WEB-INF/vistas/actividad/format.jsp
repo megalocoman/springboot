@@ -37,10 +37,11 @@
 <!-- 					</div> -->
 					<div class="form-group">
 						<label>Nombre</label>
+						
 						<form:input path="nomact" name="nomact" id="nomact" class="form-control"/>
 					</div>
-					<div class="form-group">
-						<label>Descripcion</label>
+					<div class="form-group">v
+					<label>Descripcion</label>
 						<form:input path="descact" name="descact" id="descact" class="form-control"/>
 					</div>
 					<div class="card-footer"></div>

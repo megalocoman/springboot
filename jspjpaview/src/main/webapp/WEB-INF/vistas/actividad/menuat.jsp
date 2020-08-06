@@ -15,8 +15,8 @@
 <!-- <h2>Menu Accidentes</h2> -->
 	<h3>Menu Actividades</h3>
 	<div class="container mt-4">
-			<a href="/listarat" class="btn btn-primary">Listar</a>
-<!-- 		<a href="/newat" class="btn btn-info">Nuevo</a> -->
+<!-- 			<a href="/listarat" class="btn btn-primary">Listar</a> -->
+ 		<a href="/newat" class="btn btn-info">Nuevo</a> 
 		<table class="table">
 			<thead>
 				<tr>

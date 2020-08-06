@@ -1,5 +1,7 @@
 package com.example.demo.table;
 
+import java.util.Date;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,9 +24,9 @@ public class OT {
 	@Column(name="NUMEROOT")
 	private Integer numot;
 
-//	@DateTimeFormat(pattern="dd-MM-yyyy")
+	@DateTimeFormat(pattern="dd-MM-yyyy")
 	@Column(name="FECHA_ACTIVIDAD")
-	private String fecact;
+	private Date fecact;
 	
 	@Column(name="VALOR")
 	private Integer val;
@@ -44,7 +46,7 @@ public class OT {
 	@Column(name="ACTIVIDADES_CODIGO_ACTIVIDAD")
 	private Integer codact;
 	
-	public OT(Integer numot, String fecact, Integer val, Integer pag, String statact, String rutcli, String rutprof, Integer codact) {
+	public OT(Integer numot, Date fecact, Integer val, Integer pag, String statact, String rutcli, String rutprof, Integer codact) {
 		super();
 		this.numot = numot;
 		this.fecact = fecact;
@@ -56,7 +58,7 @@ public class OT {
 		this.codact = codact;
 	}
 
-	public OT(String fecact, Integer val, Integer pag, String statact, String rutcli, String rutprof, Integer codact) {
+	public OT(Date fecact, Integer val, Integer pag, String statact, String rutcli, String rutprof, Integer codact) {
 		super();
 		this.fecact = fecact;
 		this.val = val;
@@ -79,11 +81,11 @@ public class OT {
 		this.numot = numot;
 	}
 
-	public String getFecact() {
+	public Date getFecact() {
 		return fecact;
 	}
 
-	public void setFecact(String fecact) {
+	public void setFecact(Date fecact) {
 		this.fecact = fecact;
 	}
 

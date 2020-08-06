@@ -16,7 +16,7 @@
 	<h3>Menu OT</h3>
 	<div class="container mt-4">
 
-		<a href="/listar" class="btn btn-primary">Listar</a>
+<!-- 		<a href="/listar" class="btn btn-primary">Listar</a> -->
 		<a href="/new" class="btn btn-info">Nuevo</a>
 		<table class="table">
 			<thead>
@@ -36,7 +36,8 @@
 					<tr>
 						<td><c:out value="${ot.numot}"/></td>
 <%-- 						<fmt:formatDate value="${ots.fecact}" pattern="dd-MM-yyyy"/> --%>
-						<td><c:out value="${ot.fecact}"/></td>
+<%-- 						<td><c:out value="${ot.fecact}"/></td> --%>
+						<td><fmt:formatDate type="date" value="${ot.fecact}"/></td>
 						<td><c:out value="${ot.val}"/></td>
 						<td><c:out value="${ot.pag}"/></td>
 						<td><c:out value="${ot.statact}"/></td>

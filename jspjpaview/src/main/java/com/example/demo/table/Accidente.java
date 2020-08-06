@@ -1,5 +1,7 @@
 package com.example.demo.table;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,6 +14,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name="accidente")
 public class Accidente {
@@ -22,7 +26,8 @@ public class Accidente {
     private int idaccidente;
     @Column(name="descripcion")
     private String descripsion;
-    private String fechaaccidente;
+    @DateTimeFormat(pattern="dd-MM-yyyy")
+    private Date fechaaccidente;
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "clienterutcliente", nullable = false)
     private ClienteJPA clientejpa;
@@ -50,11 +55,11 @@ public class Accidente {
 
   
 
-    public String getFechaaccidente() {
+    public Date getFechaaccidente() {
         return fechaaccidente;
     }
 
-    public void setFechaaccidente(String fechaaccidente) {
+    public void setFechaaccidente(Date fechaaccidente) {
         this.fechaaccidente = fechaaccidente;
     }
 
@@ -73,7 +78,5 @@ public class Accidente {
     public void setNombrecliente(String nombrecliente) {
         this.nombrecliente = nombrecliente;
     }
-
-    
-       
+   
 }
