@@ -2,6 +2,8 @@ package com.example.demo;
 
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,6 +30,8 @@ import com.example.demo.table.ProfesionalJPA;
 @Controller
 public class ViewController {
 
+    private static final Logger logger = LogManager.getLogger(ViewController.class);
+    
     @Autowired
     ProfesionalJPADAO profDao;
 
@@ -56,28 +60,28 @@ public class ViewController {
     // envia a vista login, para validar usuario
     @RequestMapping(value = "/login")
     public String loginPage() {
-
+	logger.info("ingreso a vista de login");
 	return "accesos/login";
     }
 
     // envia vista principal
     @RequestMapping("/")
     public String irWelcome() {
-
+	logger.info("ingreso a pagina principal");
 	return "accesos/welcome";
     }
 
     // vista posterios a validacion objeto, menu a tablas
     @RequestMapping("/ingresosistema")
     public String irIngresoSistema() {
-
+	logger.info("ingreso a menu principal");
 	return "accesos/ingresosistema";
     }
 
     // envia cuando se deslogue el usuario
     @RequestMapping(value = "/logout-success")
     public String logoutPage() {
-
+	logger.info("se deslogueo exitosamente");
 	return "accesos/logout";
     }
 
@@ -85,7 +89,7 @@ public class ViewController {
     // principal
     @RequestMapping(value = "/403")
     public String irAccesodenegado() {
-
+	logger.info("trato de ingresar a una vista a la cual no esta autorizado");
 	return "accesos/accesodenegado";
     }
 
@@ -96,7 +100,7 @@ public class ViewController {
 
     @RequestMapping(value = "/paginaingresoprofesional")
     public ModelAndView vistaIngresoProfesional() {
-
+	logger.info("ingreso a vista para ingresar registro de profesional");
 	return new ModelAndView("profesional/ingresoprofesional", "command", new ProfesionalJPA());
     }
 
@@ -105,6 +109,7 @@ public class ViewController {
     public String ingresarProfesional(@ModelAttribute("command") ProfesionalJPA pro) {
 
 	profDao.save(pro);
+	logger.info("ingreso registro exitosamente en tabla profesional");
 	return "redirect:/consultaprofesional";
     }
 
@@ -115,6 +120,7 @@ public class ViewController {
 //	
 	Iterable<ProfesionalJPA> listprof = profDao.findAll();
 	m.addAttribute("listprof", listprof);
+	logger.info("ingreso a vista consulta de tabla profesionales");
 	return "profesional/consultaprofesional";
     }
 
@@ -124,6 +130,7 @@ public class ViewController {
     public String eliminarProfesionalbyRut(@PathVariable String rutprofesional) {
 
 	profDao.deleteById(rutprofesional);
+	logger.info("elimina registro rut "+rutprofesional);
 	return "redirect:/consultaprofesional";
     }
 
@@ -133,6 +140,7 @@ public class ViewController {
     public String irActualizarProfesional(@PathVariable String rutprofesional, Model m) {
 
 	m.addAttribute("command", profDao.findById(rutprofesional));
+	logger.info("envia a actualizar registro rut "+rutprofesional+ " a vista actualizarprofesional");
 	return "profesional/actualizarprofesional";
     }
 
@@ -141,6 +149,7 @@ public class ViewController {
     @GetMapping(value = "/actprofesional")
     public String actualizarprofesional(@ModelAttribute("command") ProfesionalJPA pro) {
 	profDao.save(pro);
+	logger.info("se actualiza registra rut "+pro.getRutprofesional());
 	return "redirect:/consultaprofesional";
     }
 
@@ -151,7 +160,7 @@ public class ViewController {
 
     @RequestMapping(value = "/paginaingresocliente")
     public ModelAndView vistaIngresoCliente() {
-	System.out.println("entro mapping ingresocliente");
+	logger.info("ingreso a vista para ingresar registro de cliente");
 	return new ModelAndView("clientes/ingresocliente", "command", new ClienteJPA());
 
     }
@@ -162,6 +171,7 @@ public class ViewController {
     public String IngresarCliente(@ModelAttribute("command") ClienteJPA cli) {
 
 	cliDao.save(cli);
+	logger.info("ingreso registro rut "+cli.getRutcliente() +" exitosamente en tabla ClienteJPA");
 	return "redirect:/consultacliente";
     }
 
@@ -171,6 +181,7 @@ public class ViewController {
     public String consultarClientes(Model m) {
 
 	m.addAttribute("listcli", cliDao.findAll());
+	logger.info("consulta de tabla Cliente");
 	return "clientes/consultacliente";
     }
 
@@ -180,6 +191,7 @@ public class ViewController {
     public String eliminarClientebyRut(@PathVariable String rutcliente) {
 
 	cliDao.deleteById(rutcliente);
+	logger.info("se elimina registro rut "+rutcliente+" de tabla Cliente ");
 	return "redirect:/consultacliente";
     }
 
@@ -188,7 +200,7 @@ public class ViewController {
     @RequestMapping(value = "/actualizarcliente/{rutcliente}")
     public ModelAndView irActualizarCliente(@PathVariable String rutcliente, Model m) {
 
-	System.out.println("entro mapping actualizar cliente");
+	logger.info("se envia registro rut "+rutcliente+" a vista para actualizar");	
 	return new ModelAndView("clientes/actualizarcliente", "command", cliDao.findById(rutcliente));
     }
 
@@ -200,6 +212,7 @@ public class ViewController {
     @RequestMapping(value = "/paginaingresoaccidente")
     public ModelAndView vistaIngresoAccidente() {
 
+	logger.info("se ingresa se vista ingreso accidente");
 	return new ModelAndView("accidente/ingresoaccidente", "command", new Accidente());
     }
 
@@ -210,6 +223,7 @@ public class ViewController {
 
 	acc.setClientejpa(cliDao.findClienteJPAByNombrecliente(acc.getNombrecliente()));
 	accdao.save(acc);
+	logger.info("ingresa registro a tabla accidente");
 	return "redirect:/consultaacc";
     }
 
@@ -224,6 +238,7 @@ public class ViewController {
 	    acci.setNombrecliente(cliDao.findNombreclienteByRutcliente(acci.getClientejpa().getRutcliente()));
 	}
 	m.addAttribute("listacc", acc);
+	logger.info(" envia informaciona de tabla accidente");
 	return "accidente/consultaaccidente";
     }
 
@@ -232,6 +247,7 @@ public class ViewController {
     public String eliminarAccidenteById(@PathVariable int idaccidente) {
 
 	accdao.deleteById(idaccidente);
+	logger.info("borra registro rut "+idaccidente+" de tabla accidente");
 	return "redirect:/consultaacc";
     }
 
@@ -243,6 +259,7 @@ public class ViewController {
 	Optional<Accidente> accidente = accdao.findById(idaccidente);
 	accidente.get().setNombrecliente(
 		cliDao.findNombreclienteByRutcliente(accidente.get().getClientejpa().getRutcliente()));
+	logger.info("envia registro id "+idaccidente+" de tabla accidente");
 	return new ModelAndView("accidente/actualizaraccidente", "command", accidente);
     }
 
@@ -254,6 +271,7 @@ public class ViewController {
     @RequestMapping(value = "/paginagenerarinforme")
     public String irGeneracionInforme() {
 
+	logger.info("envia a vista de generacion de informes");
 	return "informes/generacioninformes";
     }
 
@@ -263,6 +281,7 @@ public class ViewController {
     public String generarInformeProfesional(Model m) {
 
 	m.addAttribute("informeprofesional", repprof.findAll());
+	logger.info("genera informe de infomacion relativa a profesional");
 	return "informes/informegestionprofesional";
     }
 
@@ -272,6 +291,7 @@ public class ViewController {
     public String generarInformeCliente(Model m) {
 
 	m.addAttribute("informecliente", repcliente.findAll());
+	logger.info("genera informe de infomacion relativa a cliente");
 	return "informes/informegestioncliente";
     }
 
@@ -283,6 +303,7 @@ public class ViewController {
     public String listar(Model model) {
 
 	model.addAttribute("ot", otservice.findAll());
+	logger.info("envia informacion de tabla OT a vista menuot");
 	return "ot/menuot";
     }
 
@@ -300,6 +321,7 @@ public class ViewController {
     public String save(@ModelAttribute("command") OT o) {
 
 	otservice.save(o);
+	logger.info("envia a ingreso de registro tabla");
 	return "redirect:/listar";
     }
 
@@ -308,6 +330,7 @@ public class ViewController {
     public String editar(@PathVariable Integer numot, Model model) {
 
 	model.addAttribute("command", otservice.findById(numot));
+	logger.info("envia registro id "+numot+" para actualizar a vista actualizar");
 	return "ot/formotact";
     }
 
@@ -316,6 +339,7 @@ public class ViewController {
     public String deleteOt(@PathVariable Integer numot) {
 
 	otservice.deleteById(numot);
+	logger.info("elimina registro id "+numot);
 	return "redirect:/listar";
     }
 
@@ -329,6 +353,7 @@ public class ViewController {
     public String listarat(Model model) {
 
 	model.addAttribute("actividades", actividadesservice.findAll());
+	logger.info("envia consulta de tabla actividades");
 	return "actividad/menuat";
     }
 
@@ -338,6 +363,7 @@ public class ViewController {
     public String agregarat(Model model) {
 
 	model.addAttribute("command", new ACTIVIDADES());
+	logger.info("envia a vista para ingresar registros actividades");
 	return "actividad/format";
     }
 
@@ -347,6 +373,7 @@ public class ViewController {
     public String saveat(ACTIVIDADES a, Model model) {
 
 	actividadesservice.save(a);
+	logger.info("envia a ingreso de registro actividades");
 	return "redirect:/listarat";
     }
 
@@ -355,6 +382,7 @@ public class ViewController {
     public String editarat(@PathVariable int codact, Model model) {
 
 	model.addAttribute("actividades", actividadesservice.findById(codact));
+	logger.info("envia registro id "+codact+" a vista para actualizar");
 	return "actividad/formatact";
     }
 
@@ -363,6 +391,7 @@ public class ViewController {
     public String deleteat(Model model, @PathVariable int codact) {
 
 	actividadesservice.deleteById(codact);
+	logger.info("elimina registro id "+codact+" de tabla actividades");
 	return "redirect:/listarat";
     }
 }

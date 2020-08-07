@@ -30,13 +30,9 @@
 					<div class="card-header"></div>
 
 					<div class="card-body"></div>
-					<!-- 					<div class="form-group"> -->
-					<!-- 						<label>Número OT</label> -->
-					<!-- 						<input th:field="*{numot}" type="text" class="form-control"/> -->
-					<!-- 					</div> -->
+		
 					<div class="form-group">
-<!-- 						<label>Fecha actividad</label> <input th:field="*{fecact}" -->
-<!-- 							type="text" id="datepicker" class="form-control" /> -->
+
 						<label>Fecha actividad</label> <form:input name="fecact" path="fecact"   id="datepicker"  class="form-control" />
 					</div>
 					<div class="form-group">
@@ -46,7 +42,17 @@
 						<label>Pago</label> <form:input name="pag" path="pag" id="pag" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Status actividad</label> <form:input name="statact" id="statact" path="statact" class="form-control" />
+						<label>Status actividad</label>
+						<form:select path="statact" name="statact" id="statact" class="form-control">
+						<form:option value="Sin Status">---</form:option>
+   						<form:option value="Pendiente">Pendiente</form:option>
+   						<form:option value="En Proceso">En Proceso</form:option>
+   						<form:option value="Planificada">Planificada</form:option>
+   						<form:option value="Finalizada">Finalizada</form:option>
+   						<form:option value="Cancelada">Cancelada</form:option>
+   						<form:option value="Otro">Otro</form:option>
+						</form:select>
+<%-- 						 <form:input name="statact" id="statact" path="statact" class="form-control" /> --%>
 					</div>
 					<div class="form-group">
 						<label>Rut cliente</label> <form:input name="rutcli" path="rutcli" id="rutcli" class="form-control" />
@@ -55,7 +61,18 @@
 						<label>Rut profesional</label> <form:input name="rutprof" path="rutprof" id="rutprof" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label>Codigo actividad</label> <form:input name="codact" path="codact" id="codact"  class="form-control" />
+						<label>Codigo actividad</label> 
+						<form:select path="codact" class="form-control" name="codact">
+						<form:option value="0">---</form:option>
+   						<form:option value="1">Capacitacion</form:option>
+   						<form:option value="2">Curso</form:option>
+   						<form:option value="3">Asesoria</form:option>
+   						<form:option value="4">Gestion</form:option>
+   						<form:option value="5">Visita</form:option>
+   						<form:option value="6">Soporte</form:option>
+   						<form:option value="7">Otra</form:option>
+						</form:select>
+<%-- 						<form:input name="codact" path="codact" id="codact"  class="form-control" /> --%>
 					</div>
 
 					<div class="card-footer"></div>

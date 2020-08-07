@@ -43,6 +43,7 @@ function validarCliente() {
   var contacto = document.getElementById("contacto").value;
 
   var expresion = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  var rutexpresion = /^[0-9]+[-|‐]{1}[0-9kK]{1}$/;
 
   if (
     rutcliente === "" ||
@@ -55,7 +56,7 @@ function validarCliente() {
     alert("Todos los cambios son obligatorios");
     return false;
   } else if (rutcliente.length > 12) {
-    alert("numero de digitos es incorrecto");
+    alert("numero de digitos de rut es incorrecto");
     return false;
   } else if (nombrecliente.length < 5 && nombrecliente.length > 30) {
     alert("nombre cliente debe ser entre 5 y 50 caracteres");
@@ -71,6 +72,9 @@ function validarCliente() {
     return false;
   } else if (contacto.length < 5 && contacto.length > 30) {
     alert("nombre actividad debe ser entre 5 y 50 caracteres");
+    return false;
+  } else if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rutcliente)) {
+    alert("formato no valido, ejemplo: 12345678-k");
     return false;
   }
 }
@@ -110,8 +114,45 @@ function validarOT() {
   } else if (rutprof.length > 12) {
     alert("numero de digitos es incorrecto");
     return false;
+  } else if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rutcli)) {
+    alert("formato no valido, ejemplo: 12345678-k");
+    return false;
+  } else if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rutprof)) {
+    alert("formato no valido, ejemplo: 12345678-k");
+    return false;
   } else if (isNaN(codact)) {
     alert("ingrese numero actividad");
+    return false;
+  }
+
+  if (
+    statact.value != "Sin Status" &&
+    statact.value != "Pendiente" &&
+    statact.value != "En Proceso" &&
+    statact.value != "Planificada" &&
+    statact.value != "Finalizada" &&
+    statact.value != "Cancelada" &&
+    statact.value != "Otro"
+  ) {
+    alert(
+      "Status validos:\nSin Status\nPendiente\nEn Proceso\nPlanificada\nFinalizada\nCancelada\nOtro"
+    );
+    return false;
+  }
+
+  if (
+    codact.value != "0" &&
+    codact.value != "1" &&
+    codact.value != "2" &&
+    codact.value != "3" &&
+    codact.value != "4" &&
+    codact.value != "5" &&
+    codact.value != "6" &&
+    codact.value != "7"
+  ) {
+    alert(
+      "Actividades validas:\n0: Sin Definicion\n1: Capacitacion\n2: Curso\n3: Asesoria\n4: Gestion\n5: Visita\n6: Soporte\n7: Otra"
+    );
     return false;
   }
 }
@@ -132,6 +173,9 @@ function validarProfesional() {
     return false;
   } else if (rutprofesional.length > 12) {
     alert("numero de digitos es incorrecto");
+    return false;
+  } else if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rutprofesional)) {
+    alert("formato no valido, ejemplo: 12345678-k");
     return false;
   } else if (nombre.length < 5 && nombre.length > 30) {
     alert("nombre cliente debe ser entre 5 y 50 caracteres");
