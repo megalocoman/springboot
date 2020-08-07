@@ -33,10 +33,11 @@
 					<td><c:out value="${actividades.nomact}"/></td>
 					<td><c:out value="${actividades.descact}"/></td>
 					<td>
-					<a href="/editarat/${actividades.codact}" class="btn btn-warning">Editar </a>
-					<a href="/eliminarat/${actividades.codact}" class="btn btn-danger">Eliminar</a>
+					<a href="/editarat/${actividades.codact}" class="btn btn-warning">Editar </a></td>
+					<td><a href="/eliminarat/${actividades.codact}" class="btn btn-danger">Eliminar</a></td>
+					
 <!-- 					<a th:onclick="eliminacion([[${ot.numot}]])" class="btn btn-danger"> Eliminar2</a> -->
-					</td>
+					
 				</tr>
 				</c:forEach>
 			</tbody>

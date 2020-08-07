@@ -35,17 +35,15 @@
 				<c:forEach items="${ot}" var="ot">
 					<tr>
 						<td><c:out value="${ot.numot}"/></td>
-<%-- 						<fmt:formatDate value="${ots.fecact}" pattern="dd-MM-yyyy"/> --%>
-<%-- 						<td><c:out value="${ot.fecact}"/></td> --%>
 						<td><fmt:formatDate type="date" value="${ot.fecact}"/></td>
-						<td><c:out value="${ot.val}"/></td>
-						<td><c:out value="${ot.pag}"/></td>
+						<td><fmt:formatNumber value="${ot.val}" type="currency" minFractionDigits="0"/></td>
+						<td><fmt:formatNumber value="${ot.pag}" type="currency" minFractionDigits="0"/></td>
 						<td><c:out value="${ot.statact}"/></td>
 						<td><c:out value="${ot.rutcli}"/></td>
 						<td><c:out value="${ot.rutprof}"/></td>
 						<td><c:out value="${ot.codact}"/></td>
-						<td><a href="/editar/${ot.numot}" class="btn btn-warning">Editar </a>
-							<a href="/eliminar/${ot.numot}" class="btn btn-danger">Eliminar</a>
+						<td><a href="/editar/${ot.numot}" class="btn btn-warning">Editar </a></td>
+						<td><a href="/eliminar/${ot.numot}" class="btn btn-danger">Eliminar</a>
 						</td>
 					</tr>
 				</c:forEach>

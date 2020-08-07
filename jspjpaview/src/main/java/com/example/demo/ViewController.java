@@ -187,7 +187,7 @@ public class ViewController {
     // consultacliente.jsp
     @RequestMapping(value = "/actualizarcliente/{rutcliente}")
     public ModelAndView irActualizarCliente(@PathVariable String rutcliente, Model m) {
-	
+
 	System.out.println("entro mapping actualizar cliente");
 	return new ModelAndView("clientes/actualizarcliente", "command", cliDao.findById(rutcliente));
     }
@@ -199,7 +199,7 @@ public class ViewController {
 
     @RequestMapping(value = "/paginaingresoaccidente")
     public ModelAndView vistaIngresoAccidente() {
-	
+
 	return new ModelAndView("accidente/ingresoaccidente", "command", new Accidente());
     }
 
@@ -290,7 +290,7 @@ public class ViewController {
     // ingresados
     @RequestMapping("/new")
     public String agregar(Model model) {
-	
+
 	model.addAttribute("command", new OT());
 	return "ot/formot";
     }
@@ -298,7 +298,7 @@ public class ViewController {
     // ingrea datos de objeto Ot a tabla OT, posterior redirecciona a metodo listar
     @PostMapping(value = "/save")
     public String save(@ModelAttribute("command") OT o) {
-	
+
 	otservice.save(o);
 	return "redirect:/listar";
     }
@@ -314,7 +314,7 @@ public class ViewController {
     //
     @RequestMapping(value = "/eliminar/{numot}")
     public String deleteOt(@PathVariable Integer numot) {
-	
+
 	otservice.deleteById(numot);
 	return "redirect:/listar";
     }
@@ -327,7 +327,7 @@ public class ViewController {
     // avista format
     @GetMapping("/listarat")
     public String listarat(Model model) {
-	
+
 	model.addAttribute("actividades", actividadesservice.findAll());
 	return "actividad/menuat";
     }
@@ -336,8 +336,8 @@ public class ViewController {
     // ingreso de datos
     @GetMapping("/newat")
     public String agregarat(Model model) {
-	
-	model.addAttribute("actividades", new ACTIVIDADES());
+
+	model.addAttribute("command", new ACTIVIDADES());
 	return "actividad/format";
     }
 
@@ -345,7 +345,7 @@ public class ViewController {
     // listarat, para generar tabla
     @PostMapping("/saveat")
     public String saveat(ACTIVIDADES a, Model model) {
-	
+
 	actividadesservice.save(a);
 	return "redirect:/listarat";
     }
@@ -353,7 +353,7 @@ public class ViewController {
     // busca registro segun id y envia objeto a formatact modificarlo
     @GetMapping("/editarat/{codact}")
     public String editarat(@PathVariable int codact, Model model) {
-	
+
 	model.addAttribute("actividades", actividadesservice.findById(codact));
 	return "actividad/formatact";
     }
@@ -361,7 +361,7 @@ public class ViewController {
     // elimina registo segun id y reedirecciona a vista listarat
     @GetMapping("/eliminarat/{codact}")
     public String deleteat(Model model, @PathVariable int codact) {
-	
+
 	actividadesservice.deleteById(codact);
 	return "redirect:/listarat";
     }
