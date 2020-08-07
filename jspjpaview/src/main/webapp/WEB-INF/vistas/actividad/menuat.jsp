@@ -9,6 +9,14 @@
 <title>InicioACTIVIDADES</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/FileSaver.js"></script>
+<script src="/tableexport.js"></script>
 
 </head>
 <body>
@@ -36,17 +44,21 @@
 					<a href="/editarat/${actividades.codact}" class="btn btn-warning">Editar </a></td>
 					<td><a href="/eliminarat/${actividades.codact}" class="btn btn-danger">Eliminar</a></td>
 					
-<!-- 					<a th:onclick="eliminacion([[${ot.numot}]])" class="btn btn-danger"> Eliminar2</a> -->
-					
 				</tr>
 				</c:forEach>
 			</tbody>
 
 
 		</table>
+		<div id=bottombuttons>
+	
 	</div>
-<!-- 	<script  src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-<!-- 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-<!-- 	<script src="funcion.js"></script> -->
+	</div>
+		<script type="text/javascript" > 
+	$("table").tableExport(); 
+	var $buttons = $("table").find('caption').children().detach();
+	$buttons.appendTo('#bottombuttons');
+	</script> 
+
 </body>
 </html>
