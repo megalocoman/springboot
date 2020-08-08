@@ -19,8 +19,51 @@
         <script type="text/javascript" src="/validaciones.js"></script>
 </head>
 <body>
-	<div class="container mt-4">
-		<div class="col-sm-4">
+<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand text-white"> Sobrevivientes </a>
+			<button class="navbar-toggler" type="button" data-target="#menu" data-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a href="/ingresosistema" class="nav-link">Inicio</a>
+					</li>
+					<li class="nav-item"><a href="/consultacliente" class="nav-link">Clientes</a>
+					</li>
+					<li class="nav-item"><a href="/listar" class="nav-link">OT</a>
+					</li>
+					<li class="nav-item"><a href="/paginagenerarinforme" class="nav-link">Informes de gestión</a>
+					</li>
+					<li class="nav-item"><a href="/consultaprofesional" class="nav-link">Profesionales</a>
+					</li>
+					<li class="nav-item"><a href="/consultaacc" class="nav-link">Accidentes</a>
+					</li>
+					<li class="nav-item"><a href="/listarat" class="nav-link">Actividades</a>
+					</li>
+				
+				</ul>
+				<span class="nav-bar-text">
+					Trabajo final - FullStack Java   
+				</span>
+				<span class="nav-bar-text">
+					<a href="/logout" class='btn btn-success pull-right' class="btn btn-primary"  role="button" > 
+          logout </a>
+				</span>
+				
+			
+			</div>
+		</nav>
+	</div>
+<div class="container ">
+<h1><span style="color:green">actualizar de clientes</span>
+
+        </h1>
+</div>
+
+	<div class="container ">
+	
+		<div >
 			<form:form method="get"  action="/ingrcliente" onsubmit="return validarCliente();">
 	<div class="card">
 				<div class="card-header"></div>
@@ -48,17 +91,19 @@
 				<div class="form-group">
 				<label>Contacto</label>
 				<form:input path="contacto" id="contacto" class="form-control"/>
+				<div class="card-footer"></div>
 				</div>
-			<input type="submit" value="ingresar cliente" class="btn btn-sucess">
+			<input type="submit" value="ingresar cliente" role="button" class="btn btn-sucess submit">
 			</div>
 		
 		</form:form>
 		
 		</div>
+		<a href="/consultacliente" class="btn btn-primary"  role="button">Consultar clientes</a>
 	</div>
 
 
-<a href="/consultacliente">consultar clientes</a>
+
 
 </body>
 </html>
